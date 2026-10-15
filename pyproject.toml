@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mikoshi-children"
+version = "0.1.0"
+description = "Local single-individual Mikoshi Children experimental runtime"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MPL-2.0"
+authors = [{name = "Mikoshi contributors"}]
+
+[project.scripts]
+mikoshi-children = "mikoshi_children.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
