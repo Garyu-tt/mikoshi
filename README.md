@@ -1,6 +1,6 @@
 # Mikoshi Children
 
-**Free, local, MPL-2.0 licensed, single-individual experimental edition.**
+**Free, local, GPL-3.0-or-later licensed, single-individual experimental edition.**
 
 > **Status: v0.1.0 reference runtime, not a port of the private Mikoshi engine.** This repository currently contains a minimal persistent 16-neuron demonstration and lifecycle infrastructure, not the actual Silico Animus connectome, Voxer, retina, spinal cord, physiology, Minecraft RELIC adapter, or an autonomous intelligent organism.
 
@@ -31,9 +31,9 @@ State defaults to `~/.local/state/mikoshi-children/` on Linux/macOS (or `$XDG_ST
 
 ## License and fork policy
 
-All public source files are **MPL-2.0** (see [LICENSE](LICENSE)). Forks and commercial use are allowed under the terms of the license. Changes to MPL-covered files distributed to others must be made available in source form under the applicable terms. Separately developed files and extensions may have different licenses when MPL requirements are respected; mere encryption is not an exemption for MPL-covered source. Private user data and privately developed connectomes are not included here.
+Original project code in this release is licensed under **GNU GPLv3 or later** (SPDX: `GPL-3.0-or-later`). See [LICENSE](LICENSE) and [AUTHORS.md](AUTHORS.md). Forks and commercial redistribution are permitted under the GPL, including its source-sharing obligations for covered derivative works.
 
-Mikoshi Light and Pro are **not shipped** with this release. The public single-individual cap is a product configuration and source-level design, not an enforceable restriction on modifications permitted under MPL-2.0.
+Mikoshi Light and Pro are **not shipped** in this release. The stock single-individual limit is a design choice, not a restriction on users' GPL freedoms to inspect or modify the source. Private user data, engrams and privately developed connectomes are not included here. Previously published MPL-2.0 revisions retain their original grants.
 
 ## Tests
 
