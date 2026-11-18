@@ -1,0 +1,18 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.engram",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.engram",
+  "parent": "mikoshi.storage",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "neural.engram",
+      "version": "1.0.0",
+      "prefix": "engram."
+    }
+  ],
+  "requires": []
+}

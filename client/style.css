@@ -1,0 +1,14 @@
+:root{font:14px/1.5 system-ui;color-scheme:dark;--bg:Canvas;--fg:CanvasText;--line:GrayText;--accent:AccentColor}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg)}
+header{display:flex;align-items:center;gap:12px;padding:12px;border-bottom:1px solid var(--line)}
+header span{margin-right:auto}input,textarea,button{font:inherit;color:inherit;background:Canvas;border:1px solid var(--line);border-radius:6px;padding:8px}button{cursor:pointer}
+main{display:grid;grid-template-columns:minmax(250px,300px) minmax(0,1fr);min-height:85vh}aside{border-right:1px solid var(--line);padding:14px;min-width:0}#workspace{padding:16px;min-width:0}
+h2{font-size:1.08rem}h3{font-size:.95rem;margin:18px 0 8px}.hint,small{font-size:.8rem;opacity:.8}
+#tabs,#palette,#sidebarButtons{display:grid;gap:6px}.tab{text-align:left;width:100%}.tab.selected{outline:2px solid var(--accent)}
+#areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}.zone{padding:12px;border:1px dashed var(--line);border-radius:10px;min-height:95px}
+.dragover{outline:2px dashed var(--accent);outline-offset:-3px}.action{padding:8px;border:1px solid var(--line);border-radius:7px;cursor:grab;overflow-wrap:anywhere}.action b,.action small{display:block}
+.button-item{display:inline-flex;gap:3px;margin:3px}.button-item .placed{cursor:grab}.button-item .remove{padding:3px 7px}pre{padding:14px;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid var(--line);border-radius:8px;max-height:45vh;overflow:auto}
+dialog{color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:10px;max-width:min(95vw,600px);width:100%}.field{display:grid;gap:4px;margin:12px 0}.field input,.field textarea{width:100%}.dialog-actions{display:flex;justify-content:flex-end;gap:8px}#editorError{color:tomato}
+@media(max-width:720px){main{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}header{flex-wrap:wrap}}
+
+#organ2d[hidden]{display:none}#organ2d{min-width:0}#organCanvas{width:100%;height:430px;display:block;touch-action:none;cursor:crosshair;border:1px solid var(--line);border-radius:8px}#organMeta{opacity:.8;font-size:.85rem}#organPoint{max-height:140px}

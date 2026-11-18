@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Retina discovery contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "module_id",
+    "api_version",
+    "capabilities"
+  ],
+  "properties": {
+    "module_id": {
+      "const": "mikoshi.retina"
+    },
+    "api_version": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "status",
+          "endpoint",
+          "owner"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "available",
+              "unavailable",
+              "degraded"
+            ]
+          },
+          "endpoint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "graph_node": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "BRAIN_WORKBENCH",
+    "label": "Brain Workbench",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "tool",
+    "description": "Исполнение/обзор большого коннектома (165 122 нейрона, >10 млн связей) с диагностикой и памятью.",
+    "status": "prototype",
+    "first_seen": "2026-09",
+    "note": ""
+  },
+  {
+    "id": "CHIP_WB",
+    "label": "Cognitive Chip Workbench v0.3.3",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "tool",
+    "description": "Офлайн WebGL2 arena, диагностика и локальное подключение к FlyWire runtime, без внешних CDN.",
+    "status": "tested",
+    "first_seen": "2026-09-14",
+    "note": ""
+  },
+  {
+    "id": "SILICO",
+    "label": "Silico Animus",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "tool",
+    "description": "Редактор, визуализация, эксперименты с нейронными и анатомическими коннектомами; dense voxel и 3D-структуры.",
+    "status": "prototype",
+    "first_seen": "2026-10",
+    "note": ""
+  },
+  {
+    "id": "DENSE_VOXEL",
+    "label": "Dense Voxel Brain Prototype",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "experiment",
+    "description": "Прототип отображения объёма мозга 96³; доступная демонстрация содержала 64 синтетических нейрона и 148 рёбер, не полный граф.",
+    "status": "tested",
+    "first_seen": "2026-10-14",
+    "note": ""
+  },
+  {
+    "id": "CYBERTRON",
+    "label": "Кибертрон 7000",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "experimental_subject",
+    "description": "Имя конкретного искусственного существа в Silico Animus (не название модели): 409 600 узлов, 5 567 450 связей, виртуальное тело и нейропорты.",
+    "status": "prototype",
+    "first_seen": "2026-10-21",
+    "note": "Синтетическая топология, не человеческий коннектом."
+  },
+  {
+    "id": "CYBER_CRYPTO",
+    "label": "Cybertron crypto R01/R02",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "experiment",
+    "description": "Тесты распознавания слабого генератора: ранняя видимость эффекта не подтвердилась на контролях и переносе ALPHA-G68-1.",
+    "status": "failed",
+    "first_seen": "2026-10-21",
+    "note": "Не доказывает криптоаналитическое преимущество, полноценный мозг или сознание."
+  },
+  {
+    "id": "ALPHA_G68",
+    "label": "ALPHA-G68-1 chip",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "neural_component",
+    "description": "512-ячеечная нейронная копия использовалась без памяти/личности донора в проверке переноса навыков.",
+    "status": "tested",
+    "first_seen": "2026-10-21",
+    "note": ""
+  },
+  {
+    "id": "AALW",
+    "label": "AALW / anatomy verification",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "validation_method",
+    "description": "Проверка геометрии/анатомии/топологии; исследования перехода от 100k к 1M/10M/100M+ в Big Brain.",
+    "status": "planned",
+    "first_seen": "2026-10",
+    "note": ""
+  },
+  {
+    "id": "BLACKCAT",
+    "label": "BlackCatBRAIN",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "research_project",
+    "description": "Генерация искусственных мозгов из виртуального генетического кода и процессов развития.",
+    "status": "prototype",
+    "first_seen": "2026-10",
+    "note": ""
+  },
+  {
+    "id": "RELIC",
+    "label": "RELIC Core",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "research_project",
+    "description": "Игровая нейрокибернетическая инфраструктура: DHF, экспериментальные энграммы, чипы, Genesis-интеграция.",
+    "status": "prototype",
+    "first_seen": "2026-10-13",
+    "note": ""
+  }
+]

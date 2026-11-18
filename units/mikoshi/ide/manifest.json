@@ -1,0 +1,12 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.ide",
+  "kind": "module",
+  "version": "1.0.0",
+  "title": "mikoshi.ide",
+  "parent": "mikoshi.connectome",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [],
+  "requires": []
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.ide.components",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.ide.components",
+  "parent": "mikoshi.ide",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "adamantium.components",
+      "version": "1.0.0",
+      "prefix": "components."
+    }
+  ],
+  "requires": [],
+  "protected": true
+}

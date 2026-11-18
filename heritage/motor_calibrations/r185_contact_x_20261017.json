@@ -1,0 +1,42 @@
+{
+  "schema": "mikoshi.motor-calibration.v1",
+  "id": "r185_contact_x_20261017",
+  "title": "R185 (октябрь): контакт стоп и привод по X",
+  "provenance": {
+    "kind": "original_source_review",
+    "observed_date": "2026-10-17",
+    "source_revision": "r196-original-voxel-contact",
+    "files_sha256": {
+      "QA_R185.json": "f4e1fa17eae18202e1a38d1f5a34915ae6723726395bbb589014628c105b9074",
+      "QA_R185_PHYSICS.json": "bc99059183f3d870381fd4649229957f2bac66942302701dde733be8c74efc55"
+    }
+  },
+  "protocol": {
+    "context": "isolated physics model, not live Minecraft",
+    "axis_of_torque": "X surrogate",
+    "evaluation_frame": null,
+    "method": "paired R184/R185 physical replay, not training proof"
+  },
+  "observations": [
+    {
+      "condition": "neutral",
+      "com_x": 127.5,
+      "com_z": 63.5
+    },
+    {
+      "condition": "negative",
+      "com_x": 127.051254,
+      "com_z": 63.5
+    },
+    {
+      "condition": "positive",
+      "com_x": 127.948746,
+      "com_z": 63.5
+    }
+  ],
+  "interpretation": {
+    "observed_direction": "X lateral surrogate responds to ankle torque",
+    "limits": "no verified Z motor authority in this October 2026 model; learned balance not demonstrated"
+  },
+  "operational_status": "read_only_research_evidence_not_actuator"
+}

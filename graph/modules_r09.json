@@ -1,0 +1,61 @@
+{
+  "schema": "mikoshi.module-graph.v1",
+  "nodes": [
+    {
+      "id": "mikoshi.motor.r185_lateral_z",
+      "type": "experimental-evidence",
+      "title": "R185 lateral Z ankle torque, 90-frame full-body report",
+      "status": "user-reported-not-independently-replayed"
+    },
+    {
+      "id": "mikoshi.motor.r185_contact_x_20261017",
+      "type": "historical-evidence",
+      "title": "R185 2026-10-17 ankle X contact protocol",
+      "status": "original-source-qa-read-only"
+    },
+    {
+      "id": "mikoshi.motor.calibration.registry",
+      "type": "module",
+      "title": "Discover validated motor evidence into IDE buttons",
+      "status": "implemented-read-only"
+    },
+    {
+      "id": "mikoshi.motor.actuator.gate",
+      "type": "gate",
+      "title": "Physical motor output, unavailable until tested",
+      "status": "blocked-not-a-live-action"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mikoshi.motor.r185_lateral_z",
+      "target": "mikoshi.motor.calibration.registry",
+      "relation": "provides_user_reported_evidence"
+    },
+    {
+      "source": "mikoshi.motor.r185_contact_x_20261017",
+      "target": "mikoshi.motor.calibration.registry",
+      "relation": "provides_historical_x_evidence"
+    },
+    {
+      "source": "mikoshi.motor.calibration.registry",
+      "target": "mikoshi.ide.graph",
+      "relation": "read_only_dynamic_controls"
+    },
+    {
+      "source": "mikoshi.spinal",
+      "target": "mikoshi.motor.actuator.gate",
+      "relation": "motor_output_requires_validated_adapter"
+    },
+    {
+      "source": "mikoshi.motor.r185_lateral_z",
+      "target": "mikoshi.spinal",
+      "relation": "lateral_z_calibration_candidate_not_connected"
+    },
+    {
+      "source": "mikoshi.motor.r185_contact_x_20261017",
+      "target": "mikoshi.spinal",
+      "relation": "historical_x_calibration_not_connected"
+    }
+  ]
+}

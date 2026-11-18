@@ -1,0 +1,242 @@
+[
+  {
+    "id": "e122",
+    "source": "R_SWARM",
+    "target": "FLY_8",
+    "relation": "OBSERVED_IN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e123",
+    "source": "R_FLY_COLLAPSE",
+    "target": "FLY_CNS",
+    "relation": "OBSERVED_IN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e124",
+    "source": "R_NOT_MIND",
+    "target": "HQ500M",
+    "relation": "LIMITS_CLAIMS_ABOUT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e125",
+    "source": "R_NOT_MIND",
+    "target": "CYBERTRON",
+    "relation": "LIMITS_CLAIMS_ABOUT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e126",
+    "source": "R_NOT_COPY",
+    "target": "H1_SYNTH",
+    "relation": "LIMITS_CLAIMS_ABOUT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e127",
+    "source": "R_CONTINUITY",
+    "target": "ROOM",
+    "relation": "MOTIVATES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e128",
+    "source": "R_CONTINUITY",
+    "target": "SENSOR_ROUTER",
+    "relation": "MOTIVATES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e129",
+    "source": "R_CPU",
+    "target": "BRAIN_INTEGRATION",
+    "relation": "CONSTRAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e130",
+    "source": "R_UNVERIFIED",
+    "target": "DANTE",
+    "relation": "VALIDATION_GAP_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e131",
+    "source": "BR_RES",
+    "target": "R_UNVERIFIED",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e132",
+    "source": "BR_RES",
+    "target": "R_NOT_MIND",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e133",
+    "source": "BRAIN_INTEGRATION",
+    "target": "HQ500M",
+    "relation": "POSSIBLE_SUBSTRATE_FROM",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e134",
+    "source": "BRAIN_INTEGRATION",
+    "target": "BFB9000",
+    "relation": "POSSIBLE_RUNTIME_FROM",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e135",
+    "source": "BRAIN_INTEGRATION",
+    "target": "GENESIS",
+    "relation": "POSSIBLE_ARCHITECTURE_FROM",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e136",
+    "source": "BRAIN_INTEGRATION",
+    "target": "BIGBRAIN",
+    "relation": "POSSIBLE_ARCHITECTURE_FROM",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e137",
+    "source": "BRAIN_INTEGRATION",
+    "target": "NOOSPHERE",
+    "relation": "PLANNED_MEMORY_LAYER",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e138",
+    "source": "BRAIN_INTEGRATION",
+    "target": "SPINAL",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e139",
+    "source": "BRAIN_INTEGRATION",
+    "target": "SENSOR_ROUTER",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e140",
+    "source": "BRAIN_INTEGRATION",
+    "target": "DANTE_EPISODIC",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e141",
+    "source": "BRAIN_INTEGRATION",
+    "target": "R_NOT_MIND",
+    "relation": "MUST_ACCOUNT_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e142",
+    "source": "DANTE",
+    "target": "GRAPH_SCRIBE",
+    "relation": "PLANNED_LEARNING_INPUT",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e143",
+    "source": "DANTE",
+    "target": "DANTE_EDU",
+    "relation": "PROPOSED_LEARNING_PATH",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e144",
+    "source": "ROOM",
+    "target": "GODOT_JOLT",
+    "relation": "POSSIBLE_PHYSICS_ENGINE",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e145",
+    "source": "ROOM",
+    "target": "BODY_R21",
+    "relation": "CAN_REUSE_CPU_STAND",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e146",
+    "source": "WORLD_BRIDGE",
+    "target": "SPATIAL_GRAPH",
+    "relation": "USES_SHARED_SPATIAL_MEMORY",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e147",
+    "source": "BFB9000",
+    "target": "MALE_CNS",
+    "relation": "LOADS_CONNECTOME_FROM",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e148",
+    "source": "GENESIS",
+    "target": "RELIC",
+    "relation": "INTEGRATION_TARGET_FOR",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e149",
+    "source": "BLACKCAT",
+    "target": "PLASTICITY",
+    "relation": "SHARES_DEVELOPMENTAL_GOAL_WITH",
+    "detail": "",
+    "certainty": "proposed"
+  },
+  {
+    "id": "e150",
+    "source": "GENESIS",
+    "target": "SPINAL",
+    "relation": "INVESTIGATES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e151",
+    "source": "BF_R62",
+    "target": "FLY_8",
+    "relation": "RESEARCH_CONTEMPORARY_WITH",
+    "detail": "",
+    "certainty": "supported"
+  }
+]

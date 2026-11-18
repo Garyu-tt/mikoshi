@@ -1,0 +1,112 @@
+[
+  {
+    "id": "FLYWIRE",
+    "label": "FlyWire FAFB v783",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Публичный реконструированный коннектом мозга дрозофилы: 139 255 нейронов в FAFB v783; в корпусе учтены ~54,49 млн синапсов.",
+    "status": "measured",
+    "first_seen": "2026-09-12",
+    "note": "Различать нейронов, агрегированные связи и число синапсов."
+  },
+  {
+    "id": "MALE_CNS",
+    "label": "Drosophila Male CNS",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Иной набор: 165 122 нейрона, 10 511 038 агрегированных связей в рабочем отфильтрованном графе; не путать с FlyWire FAFB.",
+    "status": "measured",
+    "first_seen": "2026-09-16",
+    "note": "Порог >=5 синапсов для части рабочего графа; большие исходные таблицы содержат иные счётчики."
+  },
+  {
+    "id": "H01_DATA",
+    "label": "H01 human cortex",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Кортикальные фрагменты человека; зарегистрированы 3 327 SWC-фрагментов в локальном корпусе.",
+    "status": "reported",
+    "first_seen": "2026-11-08",
+    "note": "Не цельный человеческий мозг; нейронные модели H01 часто инженерные приближения."
+  },
+  {
+    "id": "MICRONS",
+    "label": "MICrONS v661",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Публичные морфологические и коннектомные данные для сравнения и интеграции.",
+    "status": "reported",
+    "first_seen": "2026-11-08",
+    "note": ""
+  },
+  {
+    "id": "BANC",
+    "label": "BANC v888",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Набор коннектомных данных насекомого, включён в локальный корпус.",
+    "status": "reported",
+    "first_seen": "2026-11-08",
+    "note": ""
+  },
+  {
+    "id": "CE_HERM",
+    "label": "C. elegans, гермафродит",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Набор коннектома C. elegans для межвидового сравнения.",
+    "status": "reported",
+    "first_seen": "2026-11-08",
+    "note": ""
+  },
+  {
+    "id": "CE_MALE",
+    "label": "C. elegans, самец",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset",
+    "description": "Отдельный коннектом C. elegans, учтён в корпусе.",
+    "status": "reported",
+    "first_seen": "2026-11-08",
+    "note": ""
+  },
+  {
+    "id": "CORPUS",
+    "label": "Noosphere Connectomics Corpus R01",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "dataset_index",
+    "description": "Локальный корпус коннектомных источников: индекс 215 426 записей связности, 372 557 записей нейронов, 3 327 H01-фрагментов; 13/13 тестов.",
+    "status": "measured",
+    "first_seen": "2026-11-08",
+    "note": "Локальная историческая копия; наличие её на новой VM121 не проверялось."
+  },
+  {
+    "id": "FLY000",
+    "label": "Fly-000",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experimental_subject",
+    "description": "Виртуальная муха на FlyWire FAFB с входами зрения/обоняния, LIF-динамикой, пластичностью и замкнутым циклом.",
+    "status": "prototype",
+    "first_seen": "2026-09-12",
+    "note": ""
+  },
+  {
+    "id": "FLY_SENSOR",
+    "label": "MuJoCo / FlyGym / looming",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "interface",
+    "description": "Траектория closed-loop: физика MuJoCo, зрение FlyGym, looming-вход LC4/LPLC2, LIF-мозг, DN→VNC и локомоция.",
+    "status": "prototype",
+    "first_seen": "2026-09-12",
+    "note": "DN→VNC и мышечные выходы инженерно приближены."
+  }
+]

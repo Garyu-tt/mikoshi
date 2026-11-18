@@ -1,0 +1,24 @@
+{
+  "schema":"mikoshi.module-graph.v1",
+  "nodes":[
+    {"id":"mikoshi.retina.r239.fullscale-evidence","type":"evidence",
+     "title":"Original 920x920 R239 Engram v2 full continuation test",
+     "status":"verified-2026-11-18"},
+    {"id":"mikoshi.retina.r238.packet-transport","type":"module",
+     "title":"Authenticated original R238 sparse photon packet API",
+     "status":"locally-implemented-original-verified"},
+    {"id":"mikoshi.retina.r238.packet-evidence","type":"evidence",
+     "title":"R238 packed phase identical to full RGB at 920x920",
+     "status":"verified-2026-11-18"}
+  ],
+  "edges":[
+    {"source":"mikoshi.retina.r239.fullscale-evidence",
+     "target":"mikoshi.retina.r239.specimen","relation":"validates-full-resolution"},
+    {"source":"mikoshi.retina.r238.packet-transport",
+     "target":"mikoshi.retina.r238","relation":"accepts-original-packet"},
+    {"source":"mikoshi.retina.r238.packet-transport",
+     "target":"mikoshi.retina.r239.adapter","relation":"supplies-optic-input"},
+    {"source":"mikoshi.retina.r238.packet-evidence",
+     "target":"mikoshi.retina.r238.packet-transport","relation":"verifies-source-equivalence"}
+  ]
+}

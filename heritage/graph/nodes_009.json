@@ -1,0 +1,101 @@
+[
+  {
+    "id": "RETINA",
+    "label": "Сетчатка / графовое зрение",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "sensory_module",
+    "description": "Бинокулярная ретинальная сенсорика Mikoshi: 920×920 рецепторных адресов на глаз, L/M/S/rod рецепторы, оптическая проекция, разреженное временное обновление, стереотракт. Объектный граф и лучи являются дополнительными потоками.",
+    "status": "prototype",
+    "first_seen": "2026-11",
+    "note": "Расширено по истории R228-R257; работающий E2E тракт к Данте не подтверждён."
+  },
+  {
+    "id": "GODOT_JOLT",
+    "label": "Godot / Jolt physics",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "integration_target",
+    "description": "Предполагаемая физическая среда для тела/комнаты; по состоянию R21 живой коннектом к ней не подключён.",
+    "status": "planned",
+    "first_seen": "2026-11-15",
+    "note": ""
+  },
+  {
+    "id": "VR_BRIDGE",
+    "label": "Universal VR Bridge",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "planned_system",
+    "description": "Программная эмуляция VR HMD, контроллеров, действий и обратной сенсорики для игр; OpenXR/SteamVR как целевые интерфейсы.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  },
+  {
+    "id": "OPENXR",
+    "label": "OpenXR / SteamVR / OpenVR",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "technology",
+    "description": "Обычные системные VR-интерфейсы, через которые игры ожидают позы, кнопки и сенсорные сигналы.",
+    "status": "external",
+    "first_seen": "2026-11",
+    "note": ""
+  },
+  {
+    "id": "VIVECRAFT",
+    "label": "Minecraft Vivecraft",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "application",
+    "description": "Внешняя VR-игра для взаимодействия Данте без специальной логики игрового бота; совместимость моста пока предстоит доказать.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  },
+  {
+    "id": "GTA_VR",
+    "label": "GTA V VR-модификации",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "application",
+    "description": "Потенциальные подключаемые внешние игровые миры через VR-взаимодействие, без гарантии полной совместимости.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  },
+  {
+    "id": "WORLD_BRIDGE",
+    "label": "WorldBridge",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "planned_system",
+    "description": "Единый протокол посещаемых игровых миров и обратных событий, перенос предметов/контекста при поддержке адаптеров.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  },
+  {
+    "id": "VR_OWNER",
+    "label": "VR-взаимодействие человека и Данте",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "planned_experiment",
+    "description": "Пользователь в физическом VR, Данте через виртуальный интерфейс; совместное обучение и действия в одной игре/комнате.",
+    "status": "planned",
+    "first_seen": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "R_SWARM",
+    "label": "Мульти-мозг не дал разумности",
+    "group": "result",
+    "group_name": "Результаты и ограничения",
+    "kind": "finding",
+    "description": "Сложение четырёх/восьми fly-модулей само по себе не улучшило осмысленное поведение в Minecraft.",
+    "status": "observed",
+    "first_seen": "2026-09-20",
+    "note": "Вывод применим к конкретным испытаниям, не универсальный запрет на мультиагентность."
+  }
+]

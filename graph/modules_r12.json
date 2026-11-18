@@ -1,0 +1,34 @@
+{
+  "schema": "mikoshi.module-graph.v1",
+  "nodes": [
+    {
+      "id": "mikoshi.retina.r239.selftest",
+      "type": "module",
+      "title": "On-demand genuine source-pinned R239 Engram test",
+      "status": "implemented"
+    },
+    {
+      "id": "mikoshi.retina.r239.verified-evidence",
+      "type": "evidence",
+      "title": "R11 original 7+13 Engram v2 byte-exact test",
+      "status": "verified-2026-11-18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mikoshi.retina.r239.selftest",
+      "target": "mikoshi.retina.engram.preflight",
+      "relation": "exercises"
+    },
+    {
+      "source": "mikoshi.retina.r239.selftest",
+      "target": "mikoshi.retina.r239.specimen",
+      "relation": "checks_real_engine"
+    },
+    {
+      "source": "mikoshi.retina.r239.verified-evidence",
+      "target": "mikoshi.retina.r239.selftest",
+      "relation": "original_test_evidence"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "e001",
+    "source": "ROOT",
+    "target": "BR_BIO",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e002",
+    "source": "ROOT",
+    "target": "BR_FLY",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e003",
+    "source": "ROOT",
+    "target": "BR_MOD",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e004",
+    "source": "ROOT",
+    "target": "BR_SIM",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e005",
+    "source": "ROOT",
+    "target": "BR_GEN",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e006",
+    "source": "ROOT",
+    "target": "BR_MEM",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e007",
+    "source": "ROOT",
+    "target": "BR_BODY",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e008",
+    "source": "ROOT",
+    "target": "BR_WORLD",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e009",
+    "source": "ROOT",
+    "target": "BR_RES",
+    "relation": "HAS_BRANCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e010",
+    "source": "ROOT",
+    "target": "DANTE",
+    "relation": "GOAL_OF_RESEARCH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e011",
+    "source": "DANTE",
+    "target": "BRAIN_INTEGRATION",
+    "relation": "REQUIRES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e012",
+    "source": "CORPUS",
+    "target": "FLYWIRE",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e013",
+    "source": "CORPUS",
+    "target": "MALE_CNS",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e014",
+    "source": "CORPUS",
+    "target": "H01_DATA",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e015",
+    "source": "CORPUS",
+    "target": "MICRONS",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e016",
+    "source": "CORPUS",
+    "target": "BANC",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e017",
+    "source": "CORPUS",
+    "target": "CE_HERM",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e018",
+    "source": "CORPUS",
+    "target": "CE_MALE",
+    "relation": "INDEXES",
+    "detail": "Корпус включает этот набор данных",
+    "certainty": "supported"
+  },
+  {
+    "id": "e019",
+    "source": "BR_BIO",
+    "target": "CORPUS",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e020",
+    "source": "FLY000",
+    "target": "FLYWIRE",
+    "relation": "USES_DATASET",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e021",
+    "source": "FLY000",
+    "target": "FLY_SENSOR",
+    "relation": "USES_INTERFACE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e022",
+    "source": "FLY_KC",
+    "target": "FLY000",
+    "relation": "TESTS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e023",
+    "source": "FLY_KC_V3C",
+    "target": "FLY_KC",
+    "relation": "REFINES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e024",
+    "source": "FLY_X",
+    "target": "FLY_KC",
+    "relation": "ALTERNATIVE_EXPERIMENT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e025",
+    "source": "FLY_CNS",
+    "target": "MALE_CNS",
+    "relation": "USES_DATASET",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e026",
+    "source": "FLY_HOMEOSTASIS",
+    "target": "FLY_CNS",
+    "relation": "MODIFIES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e027",
+    "source": "FLY_4",
+    "target": "FLY000",
+    "relation": "COMBINES_INSTANCES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e028",
+    "source": "FLY_8",
+    "target": "FLY_4",
+    "relation": "EXTENDS_EXPERIMENT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e029",
+    "source": "FLY_8",
+    "target": "H01_DATA",
+    "relation": "USES_APPROXIMATION_OF",
+    "detail": "",
+    "certainty": "supported"
+  }
+]

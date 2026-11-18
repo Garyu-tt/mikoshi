@@ -1,0 +1,40 @@
+{
+  "schema": "mikoshi.visual2d.v1",
+  "notes": "Schema example, not a living neuron dataset",
+  "required": [
+    "schema",
+    "id",
+    "organ",
+    "projection",
+    "coordinate_kind",
+    "source",
+    "nodes",
+    "edges"
+  ],
+  "organs": [
+    "brain",
+    "retina",
+    "spinal"
+  ],
+  "projections": {
+    "brain": "topology",
+    "retina": "retinotopic",
+    "spinal": "segmental"
+  },
+  "node": {
+    "id": "stable real neuron/tile id",
+    "x": "optional, normalized 0..1",
+    "y": "optional, normalized 0..1",
+    "activity": "optional 0..1, only measured values",
+    "segment": "required for derived spinal projection",
+    "lane": "sensory|interneuron|motor|other"
+  },
+  "edge": {
+    "source": "existing node id",
+    "target": "existing node id"
+  },
+  "source": {
+    "id": "real dataset/provenance id"
+  },
+  "claims": "An imported view is not a running neural engine."
+}

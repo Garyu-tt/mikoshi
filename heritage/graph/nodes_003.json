@@ -1,0 +1,112 @@
+[
+  {
+    "id": "FLY_KC",
+    "label": "KC→MBON обучение v3b",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "Ассоциативное обучение: в paired менялись 12 713 рёбер; контроль odor-only/DAN-only не изменился.",
+    "status": "measured",
+    "first_seen": "2026-09-12",
+    "note": ""
+  },
+  {
+    "id": "FLY_KC_V3C",
+    "label": "Локализация MBON v3c",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "Пытались локализовать пластичность; специфика подавления стимулов не прошла проверку.",
+    "status": "failed",
+    "first_seen": "2026-09-12",
+    "note": ""
+  },
+  {
+    "id": "FLY_X",
+    "label": "Synthetic X organ v4",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "64 непересекающихся KC на X-A/X-B; различие изменения рёбер было, но отклик целевого readout нулевой.",
+    "status": "failed",
+    "first_seen": "2026-09-12",
+    "note": ""
+  },
+  {
+    "id": "FLY_CNS",
+    "label": "Male CNS brain runtime",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "runtime",
+    "description": "Runtime на 165 122 нейронах и 10 511 038 связях, реальное восстановление активности и память; в ночном тесте коллапс активности.",
+    "status": "prototype",
+    "first_seen": "2026-09-16",
+    "note": ""
+  },
+  {
+    "id": "FLY_HOMEOSTASIS",
+    "label": "Adaptive homeostasis v2.22",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "Адаптивный гомеостаз, цели EXPLORE/SEEK_FOOD/SEEK_SAFETY/ESCAPE_WATER/SURVIVE и смена стратегии при stagnation.",
+    "status": "tested",
+    "first_seen": "2026-09-16",
+    "note": ""
+  },
+  {
+    "id": "FLY_4",
+    "label": "Четыре мухи A/B/C/D",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "Попытка коллективного управления одним персонажем Minecraft; конфликт команд и деградация навигации.",
+    "status": "failed",
+    "first_seen": "2026-09-20",
+    "note": ""
+  },
+  {
+    "id": "FLY_8",
+    "label": "Восемь мух + H01",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "Гибридное управление Minecraft с участием восьми fly-модулей и H01-модулей.",
+    "status": "prototype",
+    "first_seen": "2026-10-04",
+    "note": "Нет подтверждения возникновения осмысленного интеллекта."
+  },
+  {
+    "id": "CORTEX200",
+    "label": "CORTEX200 (200 H01 + 8 Fly)",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "experiment",
+    "description": "Живая конфигурация 200 H01-модулей + 8 fly-модулей; специализированные слои планирования, salience, consensus, reward routing.",
+    "status": "tested",
+    "first_seen": "2026-10-04",
+    "note": "Отдельно от HCP800 и не полноценный человеческий мозг."
+  },
+  {
+    "id": "NOOSPHERE_FLY",
+    "label": "NOOSPHERE-FLY-001",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "persistent_agent",
+    "description": "Долгоживущая экспериментальная муха на BFB9000: журнал, системный watchdog, бэкапы и собственная память; на 3 ноября зафиксированы 84 действия и 11 записей обучения.",
+    "status": "tested",
+    "first_seen": "2026-11-03",
+    "note": "Многомесячная непрерывность не гарантирована."
+  },
+  {
+    "id": "BFB_GAME",
+    "label": "BrainFryGameAgent R06.1",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "game_agent",
+    "description": "Связка BFB9000 с нейродинамикой, графовой памятью и игровым контуром; тесты пройдены, live Minecraft оставался неподтверждён.",
+    "status": "tested",
+    "first_seen": "2026-11-08",
+    "note": ""
+  }
+]

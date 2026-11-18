@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Retina receptor delta event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "specimen_id",
+    "eye",
+    "x",
+    "y",
+    "neuron_id",
+    "receptor_type",
+    "sample_at_ns",
+    "emitted_at_ns",
+    "response",
+    "fresh"
+  ],
+  "properties": {
+    "specimen_id": {
+      "type": "string"
+    },
+    "eye": {
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "x": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 919
+    },
+    "y": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 919
+    },
+    "neuron_id": {
+      "type": "string"
+    },
+    "receptor_type": {
+      "enum": [
+        "L",
+        "M",
+        "S",
+        "rod"
+      ]
+    },
+    "sample_at_ns": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "emitted_at_ns": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "response": {
+      "type": "number"
+    },
+    "fresh": {
+      "type": "boolean"
+    },
+    "source_frame_id": {
+      "type": "string"
+    }
+  }
+}

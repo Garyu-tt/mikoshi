@@ -1,0 +1,16 @@
+{
+  "schema": "mikoshi.retina.r238.packet-qa.v1",
+  "date": "2026-11-18",
+  "source_host": "legacy mirbi-linux",
+  "original_components": ["R188", "R228", "R238", "R239"],
+  "resolution_per_eye": [920, 920],
+  "source_observed_receptors_after_one_epoch": 1692800,
+  "phases_compared": 5,
+  "spikes_identical": 106211,
+  "raw_stereo_frame_bytes_per_phase": 5078400,
+  "original_r238_packet_bytes_last_phase": 1015782,
+  "byte_reduction_factor": 4.9995,
+  "integrity_test": "altered packet rejected, neural phase not advanced",
+  "status": "PASS",
+  "caveat": "Generated from synthetic RGB; no physical sensor client or network deployment verified"
+}

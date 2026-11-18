@@ -1,0 +1,25 @@
+{
+  "schema": "mikoshi.retina.original-qa.fullscale.v1",
+  "date": "2026-11-18",
+  "source_host": "legacy mirbi-linux",
+  "environment": "isolated Python 3.13 / NumPy 2.3.5",
+  "execution": "R12 original pinned smoke script, geometry adjusted to 920x920x5",
+  "source_pins": "heritage/retina_source_pins.json",
+  "resolution_per_eye": [920, 920],
+  "receptors": 1692800,
+  "phases_before": 7,
+  "phases_after": 13,
+  "post_restore_spikes_identical": 802451,
+  "spike_metadata_identical": true,
+  "neuron_state_byte_identical": true,
+  "engram_format": "mikoshi-engram.v1/retina-r239-state.v2",
+  "engram_bytes": 4526726,
+  "status": "PASS",
+  "limitations": {
+    "synthetic_brightness_only": true,
+    "camera_not_connected": true,
+    "new_vm121_not_deployed": true,
+    "windows_not_installed": true,
+    "does_not_prove_long_term_stability": true
+  }
+}

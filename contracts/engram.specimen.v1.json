@@ -1,0 +1,10 @@
+{
+  "format": "mikoshi-engram.v1",
+  "kind": "specimen",
+  "engine": "cpu-lif-v1",
+  "required_blobs": ["neural/connectome_state.json", "neural/connectome_source.json"],
+  "state_schema": "mikoshi.connectome-state.v1",
+  "state_fields": ["id", "source_sha256", "tick", "sample_at_ns", "clock_domain", "potentials", "refractory_ms", "last_spikes"],
+  "verification": "Every blob must match SHA-256 and the state topology hash must match its stored source bytes. Restoring requires a matching loaded topology and a fresh runtime.",
+  "non_claims": ["not Dante", "not biological synapse simulation", "not an R239 checkpoint", "not an environment or world-state checkpoint"]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ROOT",
+    "label": "Исследования цифровых мозгов",
+    "group": "hub",
+    "group_name": "Синтез и программа",
+    "kind": "program",
+    "description": "Единая исследовательская программа: от реконструкции коннектомов до воплощенного обучающегося существа.",
+    "status": "reported",
+    "first_seen": "2026-07",
+    "note": ""
+  },
+  {
+    "id": "DANTE",
+    "label": "Данте / Микоши Симулякр",
+    "group": "hub",
+    "group_name": "Синтез и программа",
+    "kind": "target",
+    "description": "Целевой замысел одного непрерывно работающего цифрового существа: мозг, память, моторика, сенсорика, собственная комната и внешние VR-миры. Разумность/сознание не доказаны.",
+    "status": "planned",
+    "first_seen": "2026-11",
+    "note": ""
+  },
+  {
+    "id": "BRAIN_INTEGRATION",
+    "label": "Единый нейронный контур Данте",
+    "group": "hub",
+    "group_name": "Синтез и программа",
+    "kind": "architecture",
+    "description": "Объединение обучающегося нейронного субстрата с телом, памятью, мотивацией и обратной связью мира; не эквивалентно сумме независимых агентов.",
+    "status": "planned",
+    "first_seen": "2026-11",
+    "note": ""
+  },
+  {
+    "id": "BR_BIO",
+    "label": "Биологические данные",
+    "group": "bio",
+    "group_name": "Биологические данные",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_FLY",
+    "label": "Эксперименты с мухами",
+    "group": "fly",
+    "group_name": "Эксперименты с мухами",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_MOD",
+    "label": "Модульные мозги",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_SIM",
+    "label": "Среды и модели",
+    "group": "simulation",
+    "group_name": "Среды и модели",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_GEN",
+    "label": "Генерация и масштабирование",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_MEM",
+    "label": "Память и личность",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_BODY",
+    "label": "Тело и сенсорика",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_WORLD",
+    "label": "Миры и VR",
+    "group": "world",
+    "group_name": "Миры и VR",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  },
+  {
+    "id": "BR_RES",
+    "label": "Результаты и ограничения",
+    "group": "result",
+    "group_name": "Результаты и ограничения",
+    "kind": "branch",
+    "description": "Тематическая ветка графа исследований.",
+    "status": "index",
+    "first_seen": "",
+    "note": ""
+  }
+]

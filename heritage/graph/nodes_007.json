@@ -1,0 +1,101 @@
+[
+  {
+    "id": "HQ_FUSION",
+    "label": "HQ500M fusion R04",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "experiment",
+    "description": "Управляемая ассоциативная пластичность: 5/11 paired, 0 в контролях; результаты отдельно от Fly-корпуса.",
+    "status": "tested",
+    "first_seen": "2026-11-12",
+    "note": ""
+  },
+  {
+    "id": "HQ_FRONTIER",
+    "label": "HQ500M sparse-frontier",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "experiment",
+    "description": "Алгоритм дал повторяемый результат, но оказался в 3,1–3,8 раза медленнее полного пересчёта; интеграция заблокирована.",
+    "status": "failed",
+    "first_seen": "2026-11-13",
+    "note": ""
+  },
+  {
+    "id": "BIGBRAIN",
+    "label": "Big Brain (BB)",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "research_project",
+    "description": "Направление на единый обучающийся коннектом с развитием, пластичностью, происхождением связей и проверяемой нейродинамикой.",
+    "status": "prototype",
+    "first_seen": "2026-10-19",
+    "note": "Не синоним BFB9000: Big Brain является широкой исследовательской программой."
+  },
+  {
+    "id": "BFB9000",
+    "label": "BFB9000",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "brain_runtime",
+    "description": "Собственный динамический цифровой коннектом, нейроны, синапсы, обучение, память и сенсорика; исследовательский runtime Big Brain.",
+    "status": "tested",
+    "first_seen": "2026-10-26",
+    "note": ""
+  },
+  {
+    "id": "ECHO",
+    "label": "Neural Echo",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "sensory_module",
+    "description": "Восприятие Wi-Fi/CSI/RSSI без камеры/микрофона, интегрируемое в активность мозга, память и обучение.",
+    "status": "prototype",
+    "first_seen": "2026-10-25",
+    "note": ""
+  },
+  {
+    "id": "PLASTICITY",
+    "label": "Пять видов пластичности",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "hypothesis",
+    "description": "Синаптическая, структурная, гомеостатическая, нейромодуляторная и developmental-пластичность, с пометкой происхождения каждого ребра.",
+    "status": "planned",
+    "first_seen": "2026-10-26",
+    "note": ""
+  },
+  {
+    "id": "NOOSPHERE",
+    "label": "Ноосфера",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "memory_platform",
+    "description": "Каноническая долговременная графовая память, семантическая и временная история, связи между наблюдениями и агентами, на VM121.",
+    "status": "reported",
+    "first_seen": "2026-07",
+    "note": "Текущая синхронизация этого графа не выполнялась."
+  },
+  {
+    "id": "JOHNNY_R01",
+    "label": "Johnny HQ500M Memory R01",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "experiment",
+    "description": "123 узла смысла, 262 смысловые связи, 1 048 нейронных мостов, 52 спайка, 7 проверок.",
+    "status": "tested",
+    "first_seen": "2026-11-08",
+    "note": ""
+  },
+  {
+    "id": "JOHNNY_R02",
+    "label": "Johnny HQ500M Memory R02/R03",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "experiment",
+    "description": "В R02 память влияла на активность: 1 704 ассоциации, 1 756 обновлений весов; R03 8/8 тестов, живая командная связка выключена.",
+    "status": "tested",
+    "first_seen": "2026-11-08",
+    "note": ""
+  }
+]

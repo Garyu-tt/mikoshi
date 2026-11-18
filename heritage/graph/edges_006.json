@@ -1,0 +1,218 @@
+[
+  {
+    "id": "e152",
+    "source": "BFB9000",
+    "target": "BF_R62",
+    "relation": "IS_DISTINCT_FROM",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e153",
+    "source": "HQ500M",
+    "target": "BFB9000",
+    "relation": "IS_DISTINCT_FROM",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e154",
+    "source": "CORTEX200",
+    "target": "H1_SYNTH",
+    "relation": "USES_MODULAR_APPROXIMATION",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e155",
+    "source": "R_SWARM",
+    "target": "BRAIN_INTEGRATION",
+    "relation": "MOTIVATES_SINGLE_SUBJECT_GOAL",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "rh156",
+    "source": "RETINA",
+    "target": "RETINA_ANATOMY",
+    "relation": "DESCRIBES",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh157",
+    "source": "RETINA",
+    "target": "RETINA_RAYS",
+    "relation": "AUGMENTED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh158",
+    "source": "RETINA",
+    "target": "RETINA_R228",
+    "relation": "EVOLVED_IN",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh159",
+    "source": "RETINA",
+    "target": "RETINA_R240",
+    "relation": "EVOLVED_IN",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh160",
+    "source": "RETINA",
+    "target": "RETINA_R241",
+    "relation": "CAN_CHECKPOINT_WITH",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh161",
+    "source": "RETINA",
+    "target": "RETINA_NEURAL_ADAPTER",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh162",
+    "source": "RETINA",
+    "target": "RETINA_GRAPH_PROJECTION",
+    "relation": "EMITS_TO",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh163",
+    "source": "RETINA",
+    "target": "RETINA_ENGRAM_BINDING",
+    "relation": "PERSISTED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh164",
+    "source": "RETINA",
+    "target": "RETINA_SOURCE_AUDIT",
+    "relation": "REQUIRES_AUDIT",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh165",
+    "source": "RETINA",
+    "target": "RETINA_FLY_V3",
+    "relation": "HAS_EARLIER_PARALLEL",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh166",
+    "source": "RETINA_R228",
+    "target": "RETINA_R240",
+    "relation": "PRECEDES",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh167",
+    "source": "RETINA_R240",
+    "target": "RETINA_R241",
+    "relation": "CHECKPOINTED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh168",
+    "source": "RETINA_R240",
+    "target": "RETINA_R242",
+    "relation": "SCHEDULING_IMPROVED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh169",
+    "source": "RETINA_R242",
+    "target": "RETINA_R243",
+    "relation": "COORDINATION_EXTENDED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh170",
+    "source": "RETINA_R243",
+    "target": "RETINA_R244",
+    "relation": "MOTION_EXTENDED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh171",
+    "source": "RETINA_R244",
+    "target": "RETINA_R245_R246",
+    "relation": "STATE_VALIDATED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh172",
+    "source": "RETINA_R245_R246",
+    "target": "RETINA_R248_R249",
+    "relation": "STEREO_TUNING_TESTED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh173",
+    "source": "RETINA_R248_R249",
+    "target": "RETINA_R254_R257",
+    "relation": "DEPTH_EXTENDED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh174",
+    "source": "RETINA_R254_R257",
+    "target": "RETINA_NEURAL_ADAPTER",
+    "relation": "NOT_YET_PROVED_E2E_WITH",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh175",
+    "source": "RETINA_NEURAL_ADAPTER",
+    "target": "RETINA_ENGRAM_BINDING",
+    "relation": "STATE_MANAGED_BY",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh176",
+    "source": "RETINA_GRAPH_PROJECTION",
+    "target": "SPATIAL_GRAPH",
+    "relation": "UPDATES",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh177",
+    "source": "RETINA_RAYS",
+    "target": "RETINA_GRAPH_PROJECTION",
+    "relation": "PARALLEL_GEOMETRY_INPUT",
+    "detail": "",
+    "certainty": "historical_recollection"
+  },
+  {
+    "id": "rh178",
+    "source": "RETINA_ANATOMY",
+    "target": "RETINA_NEURAL_ADAPTER",
+    "relation": "MAPS_RECEPTORS_TO",
+    "detail": "",
+    "certainty": "historical_recollection"
+  }
+]

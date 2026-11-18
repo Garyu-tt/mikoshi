@@ -1,0 +1,112 @@
+[
+  {
+    "id": "GRAPH_SCRIBE",
+    "label": "GraphScribe",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "planned_system",
+    "description": "Мультимодальный стенограф опыта и формирования личности из видео, звука, графового зрения и повествования, включая корректировку 1-го/3-го лица.",
+    "status": "planned",
+    "first_seen": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "SPATIAL_GRAPH",
+    "label": "Spatial Object Graph",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "planned_system",
+    "description": "Объекты в мировых координатах, наблюдения, уверенность, история, пространственные связи, отдельные игровые измерения.",
+    "status": "planned",
+    "first_seen": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "DANTE_EDU",
+    "label": "Образование Данте",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "planned_system",
+    "description": "Поэтапное обучение языкам, школьным дисциплинам и IT/CS с применением опыта в симуляции.",
+    "status": "planned",
+    "first_seen": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "DANTE_CHARACTER",
+    "label": "Характер и автономная мотивация",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "hypothesis",
+    "description": "Любопытство, перенос навыков, исследование, предпочтения, инициативность; не считать сознание доказанным.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  },
+  {
+    "id": "DANTE_EPISODIC",
+    "label": "Эпизодическая личная память Данте",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "architecture",
+    "description": "Непрерывная биография, персональные отношения, временная линия наблюдений и действий; записи отличать от синаптического состояния.",
+    "status": "planned",
+    "first_seen": "2026-11",
+    "note": ""
+  },
+  {
+    "id": "MUNI",
+    "label": "Mikoshi / MUNI",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "body_interface",
+    "description": "Универсальный слой виртуального тела со сменными мозгами, сетчаткой, сенсорными и моторными портами и спинным мозгом.",
+    "status": "prototype",
+    "first_seen": "2026-10",
+    "note": ""
+  },
+  {
+    "id": "SPINAL",
+    "label": "Спинной мозг / моторный контроллер",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "architecture",
+    "description": "Рефлексы, IK/PD, ограничения суставов; движение порождает контроллер, готовые анимации разрешены только для обучения.",
+    "status": "planned",
+    "first_seen": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "BODY_R21",
+    "label": "Mikoshi Simulacrum R21 CPU stand",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "C++17 CPU-стенд: 20 управляемых осей, 15 тактильных каналов, шаг 1/240 секунды, PD/IK; не был подключён к реальному коннектому Данте.",
+    "status": "tested",
+    "first_seen": "2026-11-15",
+    "note": ""
+  },
+  {
+    "id": "ROOM",
+    "label": "Постоянная комната / XR-home",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "environment",
+    "description": "Базовая сенсорная реальность как безопасный буфер между играми; мир продолжает работать при закрытии VR-приложений.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  },
+  {
+    "id": "SENSOR_ROUTER",
+    "label": "Sensor Router",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "architecture",
+    "description": "Маршрутизация зрения, слуха, проприоцепции и моторных сигналов между домом и приложениями без остановки мозга.",
+    "status": "planned",
+    "first_seen": "2026-11-16",
+    "note": ""
+  }
+]

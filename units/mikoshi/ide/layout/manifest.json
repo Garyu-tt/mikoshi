@@ -1,0 +1,18 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.ide.layout",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.ide.layout",
+  "parent": "mikoshi.ide",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "ide.layout.dynamic",
+      "version": "1.0.0",
+      "prefix": "layout."
+    }
+  ],
+  "requires": []
+}

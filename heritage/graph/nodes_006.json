@@ -1,0 +1,112 @@
+[
+  {
+    "id": "GENETOR",
+    "label": "RELIC GENETOR",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "module",
+    "description": "Генетическая рекомбинация, родословная, инкубация, наследование нейропараметров, но без наследования личной памяти.",
+    "status": "prototype",
+    "first_seen": "2026-10-13",
+    "note": ""
+  },
+  {
+    "id": "GENOLINK",
+    "label": "GENOLINK / NeoSync",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "interface",
+    "description": "Кодовая передача генетической информации через OpenComputers/NeoSync.",
+    "status": "planned",
+    "first_seen": "2026-10-13",
+    "note": ""
+  },
+  {
+    "id": "DHF",
+    "label": "DHF / энграммы",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "portable_state",
+    "description": "Переносимые нейронные состояния и индивидуальные энграммы; отделять личную память от наследуемых параметров.",
+    "status": "prototype",
+    "first_seen": "2026-10-13",
+    "note": ""
+  },
+  {
+    "id": "CHIPWARE",
+    "label": "Neuroport / Chipware / Cyberdeck",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "hardware_interface",
+    "description": "Нейропорты и слоты расширения виртуальных мозгов, интерфейсы Cybernetics ChipSoft.",
+    "status": "prototype",
+    "first_seen": "2026-10",
+    "note": ""
+  },
+  {
+    "id": "GENESIS",
+    "label": "GENESIS (нейронная система)",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "brain_architecture",
+    "description": "Исследования процедурного нейросубстрата с рефлексами, спинным мозгом, генетическими параметрами и масштабированием.",
+    "status": "prototype",
+    "first_seen": "2026-11",
+    "note": ""
+  },
+  {
+    "id": "GENESIS_G03",
+    "label": "GENESIS G0.3",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "experiment",
+    "description": "Процедурный storage-first эксперимент: 37,27 млн нейронов / 1,19 млрд синапсов по отчёту; HDD I/O не выдержал дальнейшей записи.",
+    "status": "partial",
+    "first_seen": "2026-11-02",
+    "note": ""
+  },
+  {
+    "id": "HQ_Q01",
+    "label": "Human Quantum Q0.1",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "experiment",
+    "description": "Минимальный воспроизводимый опыт: 96 нейронов, 1 536 синапсов, 619 импульсов/с, 15 574 обновления весов.",
+    "status": "tested",
+    "first_seen": "2026-11-02",
+    "note": ""
+  },
+  {
+    "id": "HQ500M",
+    "label": "HQ500M / Human Quantum",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "brain_architecture",
+    "description": "500 млн виртуально адресуемых нейронов и до 16 млрд потенциальных синапсов. Масштаб адресного пространства, не одновременно активные 500 млн.",
+    "status": "prototype",
+    "first_seen": "2026-11-02",
+    "note": ""
+  },
+  {
+    "id": "HQ_Q08",
+    "label": "HQ500M Q0.8",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "release",
+    "description": "Публичный прототип с CUDA и разреженной пластичностью, тестом обучения связи и восстановлением checkpoint.",
+    "status": "reported",
+    "first_seen": "2026-11-08",
+    "note": ""
+  },
+  {
+    "id": "HQ_Q09",
+    "label": "HQ500M Q0.9",
+    "group": "genesis",
+    "group_name": "Генерация и масштабирование",
+    "kind": "experiment",
+    "description": "Экспериментальная ветка без подтверждённой итоговой серии измерений.",
+    "status": "partial",
+    "first_seen": "2026-11-08",
+    "note": ""
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "HCP800",
+    "label": "HCP800",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "brain_architecture",
+    "description": "800 кортикальных областей/parcel, 9 802 структурные межобластные связи; эксперименты 800×512 = 409 600 элементов и 4,915 млн локальных связей.",
+    "status": "prototype",
+    "first_seen": "2026-10",
+    "note": "Число parcel не равно числу биологических нейронов."
+  },
+  {
+    "id": "HCP_PROP",
+    "label": "HCP800 macro-пропагация",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "experiment",
+    "description": "Исправлен ошибочный усредняющий проход. В тесте импульс P400 дошёл до соседей и 2-hop областей; активность 557/800 >0.01.",
+    "status": "tested",
+    "first_seen": "2026-10-07",
+    "note": ""
+  },
+  {
+    "id": "HCP_RETINA",
+    "label": "HCP800 зрение (77 лучей)",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "experiment",
+    "description": "Расширение сенсорики Minecraft с 3 до 77 геометрических лучей и 396 признаков; перспектива ретинальных каналов.",
+    "status": "tested",
+    "first_seen": "2026-10-09",
+    "note": ""
+  },
+  {
+    "id": "BF_R62",
+    "label": "BrainFly R62",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "brain_instance",
+    "description": "Исходный экземпляр A с HCP800, Minecraft и отдельной памятью; архивы с кодом/состояниями сохранены, RAM-состояние не входит.",
+    "status": "archived",
+    "first_seen": "2026-10-12",
+    "note": ""
+  },
+  {
+    "id": "BF_MEMORY",
+    "label": "BrainFly A legacy memory",
+    "group": "identity",
+    "group_name": "Память и личность",
+    "kind": "memory_store",
+    "description": "177 файлов/около 153–160 МБ эпизодической памяти BrainFly; хранится отдельно от NextGen.",
+    "status": "archived",
+    "first_seen": "2026-10-11",
+    "note": ""
+  },
+  {
+    "id": "BF_NG",
+    "label": "BrainFly NextGen NG-001",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "brain_instance",
+    "description": "Экспериментальная ветка HCP800/800 H01; обучение и моторный контур SiliconeDolls через PlayerActionPack, 28 233 кадра и проверенные изменения весов.",
+    "status": "tested",
+    "first_seen": "2026-10-13",
+    "note": "Не подменять архивом R62; перенос старой памяти не подтверждён."
+  },
+  {
+    "id": "BF_SV",
+    "label": "BrainFly HCP800 сервиторы SV-001..004",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "experiment",
+    "description": "Четыре отдельных рабочих экземпляра Minecraft с раздельным runtime, памятью эпизодов и рабочими задачами.",
+    "status": "tested",
+    "first_seen": "2026-10-10",
+    "note": "Автономная разумность и сознание не доказаны."
+  },
+  {
+    "id": "BF_LANG",
+    "label": "BrainFly речевой мозг без LLM",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "prototype",
+    "description": "Ассоциативная SQLite-память, теги, язык и символические факты без обязательной LLM; голосовой вывод отложен.",
+    "status": "prototype",
+    "first_seen": "2026-10-11",
+    "note": ""
+  },
+  {
+    "id": "HCP_FLAT",
+    "label": "HCP800-Flat",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "proposal",
+    "description": "Идея единого sparse-графа с адресными межобластными синапсами вместо полного слияния всех областей.",
+    "status": "planned",
+    "first_seen": "2026-10-11",
+    "note": ""
+  },
+  {
+    "id": "H1_SYNTH",
+    "label": "H1/H01-модульная архитектура",
+    "group": "modular",
+    "group_name": "Модульные мозги",
+    "kind": "brain_architecture",
+    "description": "Использование упрощённых человеческих кортикальных фрагментов как модулей; не перенос биологической личности.",
+    "status": "prototype",
+    "first_seen": "2026-10",
+    "note": ""
+  }
+]

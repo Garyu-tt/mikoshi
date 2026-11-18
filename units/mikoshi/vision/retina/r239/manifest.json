@@ -1,0 +1,33 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.retina.r239",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.retina.r239",
+  "parent": "mikoshi.retina",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "vision.retina.r239.execute",
+      "version": "1.0.0",
+      "prefix": "retina.r239."
+    },
+    {
+      "name": "vision.retina.r239.status",
+      "version": "1.0.0",
+      "action": "retina.sparse.status"
+    },
+    {
+      "name": "vision.retina.r239.engram",
+      "version": "1.0.0",
+      "prefix": "engram.retina.r239."
+    },
+    {
+      "name": "visual2d.retina.r239",
+      "version": "1.0.0",
+      "prefix": "visual2d.open.retina."
+    }
+  ],
+  "requires": []
+}

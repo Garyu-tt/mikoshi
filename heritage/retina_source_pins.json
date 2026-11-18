@@ -1,0 +1,18 @@
+{
+  "provenance": "2026-11-18 read-only SHA-256 on historical mirbi-linux",
+  "source_root": "legacy r180-retina-mosaic release, NOT a deployment path",
+  "files": {
+    "retina_r180.py": "67203cb15cdb94d3fa3976d789f3d7e2b0685ef8cf36c79527664294ac6d1e7a",
+    "neural_retina_r182.py": "1fe970980e1dcd42351d3ce90408f037d842af8b2ac15172df576e5f45989337",
+    "staggered_retina_r228.py": "3c93027f8fae6e828fa08b90e6fa5b90ed02acf7425be005563f0f70309a626f",
+    "sparse_retinal_circuit_r229.py": "d6479162cf6da7a5031fe81cb3efbfd53077c5c86bb8863b9b9d23bd2f718175",
+    "clustered_retinal_circuit_r239.py": "9f886a21543472012ec920fcc1ad9a95d8ffae36926b90477a2524389a3c28f9",
+    "stereo_temporal_gate_r257.py": "9c495d9ec98d7f8446272cd244dd6d125ba80e05650b4582f4fbc886ded788a6",
+    "neural_retina_r188.py": "12c9cfd05b1f7d2f5aaccfbe68f7e487c79b98a80bf731bb6fc9246536327c01",
+    "tile_sampler_r238.py": "168c85e01778ba3652488944fbd5be435f941db7d3708079dccfdf388732c3eb"
+  },
+  "gates": {
+    "r239": "only-with-hash-pinned-R180-R182-R188-R228-R238-R239-and-numpy",
+    "r257": "blocked_for_production"
+  }
+}

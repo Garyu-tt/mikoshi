@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mikoshi original clustered retinal state v2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema", "body_uuid", "width", "height", "tile", "passes", "seed", "last_step", "source_sha256", "static_type_counts_sha256", "scalars", "fields"],
+  "properties": {
+    "schema": {"const": "mikoshi.retina-r239-state.v2"},
+    "body_uuid": {"type": "string", "format": "uuid"},
+    "width": {"type": "integer", "minimum": 16, "maximum": 1600, "multipleOf": 8},
+    "height": {"type": "integer", "minimum": 16, "maximum": 1600, "multipleOf": 8},
+    "tile": {"const": 8},
+    "passes": {"enum": [4, 5]},
+    "seed": {"type": "integer", "minimum": 0},
+    "last_step": {"type": "integer", "minimum": -1},
+    "source_sha256": {"type": "object", "required": ["retina_r180.py", "neural_retina_r182.py", "neural_retina_r188.py", "staggered_retina_r228.py", "tile_sampler_r238.py", "clustered_retinal_circuit_r239.py"]},
+    "static_type_counts_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "scalars": {"type": "object"},
+    "fields": {"type": "object", "minProperties": 1}
+  }
+}

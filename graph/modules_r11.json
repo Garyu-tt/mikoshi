@@ -1,0 +1,34 @@
+{
+  "schema": "mikoshi.module-graph.v1",
+  "nodes": [
+    {
+      "id": "mikoshi.retina.anatomy.guard",
+      "type": "module",
+      "title": "Pinned source anatomy invariants",
+      "status": "implemented"
+    },
+    {
+      "id": "mikoshi.retina.engram.preflight",
+      "type": "module",
+      "title": "Nonmutating R239 checkpoint preflight",
+      "status": "implemented"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mikoshi.retina.anatomy.guard",
+      "target": "mikoshi.retina.clock.guard",
+      "relation": "corroborates_checkpoint"
+    },
+    {
+      "source": "mikoshi.retina.engram.preflight",
+      "target": "mikoshi.retina.r239.specimen",
+      "relation": "prepares_restore_without_mutation"
+    },
+    {
+      "source": "mikoshi.retina.engram.preflight",
+      "target": "mikoshi.retina.anatomy.guard",
+      "relation": "checks_static_identity"
+    }
+  ]
+}

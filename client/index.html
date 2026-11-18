@@ -1,0 +1,19 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mikoshi: Connectome IDE Module</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><strong>Mikoshi / Connectome</strong><span id="status">Отключено</span>
+<label>API-токен <input id="token" type="password" autocomplete="off"></label>
+<button id="connect">Подключить</button></header>
+<main><aside><h2>Граф вкладок</h2><nav id="tabs"></nav>
+<h3>Кнопки этой вкладки</h3><div id="sidebarButtons"></div>
+<h3>Доступные API-действия</h3><p class="hint">Перетаскивай действие на вкладку или
+в область. Двойной щелчок открывает форму API.</p><div id="palette"></div></aside>
+<div id="workspace"><h2 id="current">Выбери вкладку</h2><div id="areas"></div>
+<section id="organ2d" hidden><h3 id="organTitle"></h3><p id="organMeta"></p>
+<canvas id="organCanvas" aria-label="2D neural graph"></canvas>
+<pre id="organPoint"></pre></section><h3>Ответ API</h3><pre id="result">Подключение не установлено</pre></div></main>
+<dialog id="editor"><form id="editorForm"><h2 id="editorTitle"></h2>
+<div id="editorFields"></div><p id="editorError" role="alert"></p>
+<div class="dialog-actions"><button type="button" id="cancelEditor">Отмена</button>
+<button type="submit">Выполнить</button></div></form></dialog>
+<script src="/app.js" type="module"></script></body></html>

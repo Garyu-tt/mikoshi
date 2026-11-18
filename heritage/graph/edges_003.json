@@ -1,0 +1,242 @@
+[
+  {
+    "id": "e061",
+    "source": "GENOLINK",
+    "target": "GENETOR",
+    "relation": "TRANSPORTS_GENETICS_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e062",
+    "source": "RELIC",
+    "target": "DHF",
+    "relation": "USES_ENGRAMS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e063",
+    "source": "RELIC",
+    "target": "CHIPWARE",
+    "relation": "USES_INTERFACE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e064",
+    "source": "RELIC",
+    "target": "GENESIS",
+    "relation": "EXPERIMENTAL_INTEGRATION",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e065",
+    "source": "GENETOR",
+    "target": "BLACKCAT",
+    "relation": "SHARES_GENERATIVE_RESEARCH_WITH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e066",
+    "source": "GENESIS_G03",
+    "target": "GENESIS",
+    "relation": "SCALES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e067",
+    "source": "HQ_Q01",
+    "target": "GENESIS",
+    "relation": "PROTOTYPES_NEURAL_DYNAMICS_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e068",
+    "source": "HQ500M",
+    "target": "HQ_Q01",
+    "relation": "BUILDS_ON_EARLY_PROTOTYPE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e069",
+    "source": "HQ500M",
+    "target": "GENESIS",
+    "relation": "BELONGS_TO_FAMILY",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e070",
+    "source": "HQ_Q08",
+    "target": "HQ500M",
+    "relation": "IMPLEMENTATION_OF",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e071",
+    "source": "HQ_Q09",
+    "target": "HQ500M",
+    "relation": "EXPERIMENTAL_VERSION_OF",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e072",
+    "source": "HQ_FUSION",
+    "target": "HQ500M",
+    "relation": "TESTS_PLASTICITY_OF",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e073",
+    "source": "HQ_FRONTIER",
+    "target": "HQ500M",
+    "relation": "TESTS_OPTIMIZATION_OF",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e074",
+    "source": "BIGBRAIN",
+    "target": "PLASTICITY",
+    "relation": "SPECIFIES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e075",
+    "source": "BFB9000",
+    "target": "BIGBRAIN",
+    "relation": "IMPLEMENTS_RUNTIME_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e076",
+    "source": "BFB9000",
+    "target": "ECHO",
+    "relation": "INTEGRATES_SENSOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e077",
+    "source": "BFB_GAME",
+    "target": "BFB9000",
+    "relation": "USES_RUNTIME",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e078",
+    "source": "NOOSPHERE_FLY",
+    "target": "BFB9000",
+    "relation": "USES_RUNTIME",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e079",
+    "source": "BIGBRAIN",
+    "target": "GENESIS",
+    "relation": "PARALLEL_ARCHITECTURE_TO",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e080",
+    "source": "BR_GEN",
+    "target": "GENESIS",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e081",
+    "source": "BR_GEN",
+    "target": "HQ500M",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e082",
+    "source": "BR_GEN",
+    "target": "BLACKCAT",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e083",
+    "source": "BR_GEN",
+    "target": "BIGBRAIN",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e084",
+    "source": "BR_GEN",
+    "target": "RELIC",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e085",
+    "source": "JOHNNY_R01",
+    "target": "HQ500M",
+    "relation": "MAPS_MEMORY_TO",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e086",
+    "source": "JOHNNY_R02",
+    "target": "JOHNNY_R01",
+    "relation": "EXTENDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e087",
+    "source": "GRAPH_SCRIBE",
+    "target": "DANTE_EPISODIC",
+    "relation": "PROPOSES_TO_FEED",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e088",
+    "source": "SPATIAL_GRAPH",
+    "target": "DANTE_EPISODIC",
+    "relation": "STRUCTURES_VISUAL_MEMORY_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e089",
+    "source": "DANTE_EDU",
+    "target": "DANTE",
+    "relation": "TRAINING_PROGRAM_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e090",
+    "source": "DANTE_CHARACTER",
+    "target": "DANTE",
+    "relation": "DESIRED_PROPERTY_OF",
+    "detail": "",
+    "certainty": "supported"
+  }
+]

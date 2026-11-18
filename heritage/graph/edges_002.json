@@ -1,0 +1,250 @@
+[
+  {
+    "id": "e030",
+    "source": "CORTEX200",
+    "target": "FLY_8",
+    "relation": "EXTENDS_EXPERIMENT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e031",
+    "source": "NOOSPHERE_FLY",
+    "target": "MALE_CNS",
+    "relation": "USES_DATASET",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e032",
+    "source": "BFB_GAME",
+    "target": "MALE_CNS",
+    "relation": "USES_DATASET",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e033",
+    "source": "BR_FLY",
+    "target": "FLY000",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e034",
+    "source": "BR_FLY",
+    "target": "NOOSPHERE_FLY",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e035",
+    "source": "BR_FLY",
+    "target": "BFB_GAME",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e036",
+    "source": "HCP800",
+    "target": "H1_SYNTH",
+    "relation": "INTEGRATES_APPROXIMATION",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e037",
+    "source": "H1_SYNTH",
+    "target": "H01_DATA",
+    "relation": "INSPIRED_BY_DATASET",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e038",
+    "source": "HCP_PROP",
+    "target": "HCP800",
+    "relation": "TESTS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e039",
+    "source": "HCP_RETINA",
+    "target": "HCP800",
+    "relation": "EXTENDS_SENSORY_INPUT",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e040",
+    "source": "BF_R62",
+    "target": "HCP800",
+    "relation": "USES_ARCHITECTURE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e041",
+    "source": "BF_R62",
+    "target": "BF_MEMORY",
+    "relation": "HAS_SEPARATE_MEMORY",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e042",
+    "source": "BF_NG",
+    "target": "HCP800",
+    "relation": "USES_ARCHITECTURE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e043",
+    "source": "BF_NG",
+    "target": "BF_R62",
+    "relation": "EXPERIMENTAL_ALTERNATIVE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e044",
+    "source": "BF_SV",
+    "target": "HCP800",
+    "relation": "USES_ARCHITECTURE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e045",
+    "source": "BF_LANG",
+    "target": "BF_R62",
+    "relation": "PARALLEL_RESEARCH_FOR",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e046",
+    "source": "HCP_FLAT",
+    "target": "HCP800",
+    "relation": "PROPOSED_REDESIGN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e047",
+    "source": "BR_MOD",
+    "target": "HCP800",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e048",
+    "source": "BR_MOD",
+    "target": "BF_R62",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e049",
+    "source": "BR_MOD",
+    "target": "BF_NG",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e050",
+    "source": "BRAIN_WORKBENCH",
+    "target": "MALE_CNS",
+    "relation": "VISUALIZES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e051",
+    "source": "CHIP_WB",
+    "target": "FLYWIRE",
+    "relation": "INSPECTS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e052",
+    "source": "SILICO",
+    "target": "H1_SYNTH",
+    "relation": "VISUALIZES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e053",
+    "source": "DENSE_VOXEL",
+    "target": "SILICO",
+    "relation": "IS_PROTOTYPE_OF",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e054",
+    "source": "CYBERTRON",
+    "target": "SILICO",
+    "relation": "CREATED_IN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e055",
+    "source": "CYBER_CRYPTO",
+    "target": "CYBERTRON",
+    "relation": "TESTS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e056",
+    "source": "CYBER_CRYPTO",
+    "target": "ALPHA_G68",
+    "relation": "USES_CHIP",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e057",
+    "source": "AALW",
+    "target": "SILICO",
+    "relation": "VALIDATES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e058",
+    "source": "BR_SIM",
+    "target": "SILICO",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e059",
+    "source": "BR_SIM",
+    "target": "BRAIN_WORKBENCH",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e060",
+    "source": "GENETOR",
+    "target": "RELIC",
+    "relation": "IS_MODULE_OF",
+    "detail": "",
+    "certainty": "supported"
+  }
+]

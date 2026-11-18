@@ -1,0 +1,18 @@
+{
+  "title": "Единый граф исследований цифровых мозгов",
+  "source_version": "R001",
+  "refreshed": "2026-11-18",
+  "groups": {
+    "hub": "Синтез и программа",
+    "bio": "Биологические данные",
+    "fly": "Эксперименты с мухами",
+    "modular": "Модульные мозги",
+    "simulation": "Среды и модели",
+    "genesis": "Генерация и масштабирование",
+    "identity": "Память и личность",
+    "body": "Тело и сенсорика",
+    "world": "Миры и VR",
+    "result": "Результаты и ограничения"
+  },
+  "evidence": "Historical conversation reconstruction, not current execution or deployed code."
+}

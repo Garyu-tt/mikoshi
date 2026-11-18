@@ -1,0 +1,93 @@
+{
+  "schema": "mikoshi.module-graph.v1",
+  "nodes": [
+    {
+      "id": "mikoshi.retina.r188",
+      "type": "legacy-source",
+      "title": "R188 native neural retina (NumPy)",
+      "status": "sha256-pinned-required"
+    },
+    {
+      "id": "mikoshi.retina.r239.adapter",
+      "type": "module",
+      "title": "R188 + R228/R238/R239 original optic runner",
+      "status": "R238 correction verified on historical host; Engram roundtrip pending"
+    },
+    {
+      "id": "mikoshi.retina.r239.spikes",
+      "type": "module",
+      "title": "Bounded exact optic spike transfer",
+      "status": "implemented-source-gated"
+    },
+    {
+      "id": "mikoshi.retina.r239.specimen",
+      "type": "module",
+      "title": "Typed numeric R239 checkpoint/restore",
+      "status": "unit-tested; original-roundtrip-pending"
+    },
+    {
+      "id": "mikoshi.visual2d.axons",
+      "type": "module",
+      "title": "2D retinotopic plot of measured optic spikes",
+      "status": "unit-tested-source-gated"
+    },
+    {
+      "id": "mikoshi.retina.r238",
+      "type": "legacy-source",
+      "title": "Original R238 full microtile sampler",
+      "status": "sha256-pinned-and-original-phase-tested"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mikoshi.retina.r188",
+      "target": "mikoshi.retina.r239.adapter",
+      "relation": "provides_actual_neural_retina"
+    },
+    {
+      "source": "mikoshi.retina.r228",
+      "target": "mikoshi.retina.r239.adapter",
+      "relation": "base_sampler_for_r238"
+    },
+    {
+      "source": "mikoshi.retina.r239",
+      "target": "mikoshi.retina.r239.adapter",
+      "relation": "executes_original_r239"
+    },
+    {
+      "source": "mikoshi.retina.r239.adapter",
+      "target": "mikoshi.retina.r239.spikes",
+      "relation": "produces_exact_u32_axon_events"
+    },
+    {
+      "source": "mikoshi.retina.r239.spikes",
+      "target": "mikoshi.nervous",
+      "relation": "publishes_bounded_binary_fetch_reference"
+    },
+    {
+      "source": "mikoshi.retina.r239.spikes",
+      "target": "mikoshi.visual2d.axons",
+      "relation": "provides_actual_spike_uids"
+    },
+    {
+      "source": "mikoshi.visual2d.axons",
+      "target": "mikoshi.visual2d",
+      "relation": "renders_2d_no_webgl"
+    },
+    {
+      "source": "mikoshi.retina.r239.adapter",
+      "target": "mikoshi.retina.r239.specimen",
+      "relation": "exports_numeric_state"
+    },
+    {
+      "source": "mikoshi.retina.r239.specimen",
+      "target": "mikoshi.engram",
+      "relation": "verified_zip_with_pinned_source_hashes"
+    },
+    {
+      "source": "mikoshi.retina.r238",
+      "target": "mikoshi.retina.r239.adapter",
+      "relation": "required_tile_ids_and_complete_microtiles"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "release": "Mikoshi Connectome IDE R14",
+  "date": "2026-11-18",
+  "stage": "Local recursive plugin source, not deployed",
+  "server_target": "new VM121 mk-noosphere; NOT DEPLOYED",
+  "client_target": "Mechanicus IDE Windows/browser; NOT INSTALLED",
+  "changes": [
+    "Original pinned retina at 920x920x2 passed Engram v2 full neuro-state roundtrip",
+    "Native R238 packet-only photon phase accepted over modular API",
+    "R239 packet-only output byte-identical to full-RGB path over 5 phases",
+    "Sensor phase identity, source SHA, geometry, clocks verified by original decoder",
+    "Separate full-resolution opt-in verification CLI and machine-readable QA provenance",
+    "Code graph now includes all editable documentation alongside source code",
+    "IDE action dynamically registered only with genuine R239 instance",
+    "Dynamic recursive manifests of arbitrary depth and capability graph"
+  ],
+  "tests": {
+    "unit_tests": 98,
+    "status": "PASS, local source tests; GitHub CI pending",
+    "original_r239_engram_920_roundtrip": "PASS, 7+13 phases, 802451 matched spikes, exact numerical state",
+    "original_r238_packet_920": "PASS, 5 phases, 106211 matched spikes, bad hash rejected",
+    "real_cameras": "NOT CONNECTED",
+    "real_spinal_actuators": "NOT CONNECTED",
+    "windows_browser_e2e": "NOT VERIFIED",
+    "r13_fullsize_cli_on_original": "NOT DIRECTLY VERIFIED (R12 smoke geometry-adjusted used)"
+  }
+}

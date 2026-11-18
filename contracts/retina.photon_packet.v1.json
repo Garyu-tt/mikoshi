@@ -1,0 +1,25 @@
+{
+  "schema": "mikoshi.retina.photon-packet-api.v1",
+  "action": "retina.r239.photon.accept",
+  "only_when": "verified pinned original R238/R239 runtime loaded",
+  "fields": {
+    "photon_packet_b64": "base64 of unmodified R238 binary photon phase",
+    "clock_domain": "unix-ns",
+    "frame_ms": "integer in 1..250"
+  },
+  "packet_validation": [
+    "R238 native header and dimensions",
+    "source_body_uuid matches registered instance",
+    "source and receiver schedule_fingerprint agree",
+    "SHA256 of original R238 header and photon payload",
+    "correct next phase, no stale timestamps"
+  ],
+  "result": "same optic spike stream as full-RGB path for equal real post-optical irradiance",
+  "semantics": {
+    "photon_packet": "only actual supplied sample phase; no interpolated photons",
+    "rgb_source_trust": "not proven by checksum: sender may be a simulated sensor",
+    "stereo_depth": "not provided",
+    "biological_consciousness": "not asserted"
+  },
+  "deployment": "requires authenticated Mechanicus IDE action transport"
+}

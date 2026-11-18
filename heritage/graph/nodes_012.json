@@ -1,0 +1,57 @@
+[
+  {
+    "id": "RETINA_NEURAL_ADAPTER",
+    "label": "Visual Neural Bus / retina-to-connectome",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "interface",
+    "description": "Стабильное соответствие (eye,x,y)→нейрон; поток изменений и timestamp, отдельная временная эволюция зрительного коннектома, возможность checkpoint/replay.",
+    "status": "design_required",
+    "first_seen": "2026-11-18",
+    "note": "API-контракт для интеграции исходного кода, не функционирующий адаптер."
+  },
+  {
+    "id": "RETINA_GRAPH_PROJECTION",
+    "label": "Spatial Object Graph projection",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "interface",
+    "description": "Объекты, координаты, история видимости и confidence получаются поверх зрительного тракта, не подаются как готовое решение во входные нейроны.",
+    "status": "design_required",
+    "first_seen": "2026-11-18",
+    "note": "Графовое зрение дополняет рецепторное, не подменяет."
+  },
+  {
+    "id": "RETINA_ENGRAM_BINDING",
+    "label": "Retina Engram binding",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "architecture",
+    "description": "В энграмме хранить топологию и постоянные идентификаторы нейронов, рецепторную карту, состояние и временные метки, версию оптики/фовеа и ссылки на драйверы; не паковать сырые видеокадры без нужды.",
+    "status": "design_required",
+    "first_seen": "2026-11-18",
+    "note": "Реальное архивирование требует оригинальных исходников и проверки."
+  },
+  {
+    "id": "RETINA_SOURCE_AUDIT",
+    "label": "Retina legacy source audit",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "audit",
+    "description": "Кандидат для проверки: legacy-source://retina-mosaic-r180/; искать R228-R257 release manifests и реальные тесты.",
+    "status": "blocked_source_access",
+    "first_seen": "2026-11-18",
+    "note": "Ноутбук по YodaBR SSH недоступен: Host key verification failed; файлы не прочитаны."
+  },
+  {
+    "id": "RETINA_FLY_V3",
+    "label": "Fly-000 camera retina V3",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Реальный синтетический конвейер: камера Head1 → RGB 96×128 → 8 секторов → Neural Bus → LIF → моторные выходы; 8/8 ног в раннем тесте, но цель терялась.",
+    "status": "historical_report",
+    "first_seen": "2026-09-13",
+    "note": "Отдельный более ранний Fly-000 код и результаты, не бинокулярная сетчатка Данте."
+  }
+]

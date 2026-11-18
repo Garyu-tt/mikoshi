@@ -1,0 +1,19 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.connectome",
+  "kind": "plugin",
+  "version": "1.0.0",
+  "title": "mikoshi.connectome",
+  "parent": null,
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [],
+  "requires": [
+    {
+      "name": "storage.kv",
+      "minimum": "1.0.0",
+      "optional": true
+    }
+  ],
+  "protected": true
+}

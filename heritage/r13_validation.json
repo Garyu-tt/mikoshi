@@ -1,0 +1,45 @@
+{
+  "schema":"mikoshi.r13.validation.v1",
+  "date":"2026-11-18",
+  "unit_tests":92,
+  "unit_tests_status":"PASS",
+  "genuine_full_resolution_r239":{
+    "status":"PASS",
+    "host":"legacy mirbi-linux, isolated process",
+    "source":"R12 stock source-pinned smoke modified only for geometry 920x920 passes=5",
+    "before":7,
+    "after":13,
+    "identical_spikes":802451,
+    "identical_metadata":true,
+    "identical_neuron_buffers":true,
+    "engram_bytes":4526726,
+    "source_real_eyes":false
+  },
+  "genuine_packet_transport_r238":{
+    "status":"PASS",
+    "host":"legacy mirbi-linux, isolated process",
+    "source":"R238 native sampler and R239 native neural engine",
+    "phases":5,
+    "spikes_identical":106211,
+    "raw_stereo_rgb_bytes":5078400,
+    "original_packet_bytes":1015782,
+    "tampering_rejected_without_neuron_clock_advance":true
+  },
+  "cold_init_probe_920":{
+    "init_seconds":3.936,
+    "first_phase_seconds":0.267,
+    "rss_mib_after_first_phase":112.3,
+    "updated_receptors":338560,
+    "hardware_specific":true
+  },
+  "limitations":{
+    "r13_fullscale_cli_exact_script_executed_remotely":false,
+    "original_fullscale_smoke_equivalent_test_executed":true,
+    "standalone_hardware_eye_client":false,
+    "new_vm121_deployed":false,
+    "windows_deployed":false,
+    "motor_actuation_connected":false,
+    "actual_CI_on_canonical_server":false,
+    "R257_stereo_prod_ready":false
+  }
+}

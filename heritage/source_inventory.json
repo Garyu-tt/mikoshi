@@ -1,0 +1,98 @@
+{
+  "source_host": "legacy research host (read-only inventory)",
+  "source_root": "legacy-source://retina-mosaic-r180/",
+  "top_level_python_files": 164,
+  "top_level_test_files": 55,
+  "python_files_over_5000_bytes": 71,
+  "root_tree_files_including_cache": 4616,
+  "root_tree_du": "567M",
+  "verified_checkpoint": {
+    "path": "r256-canary/brain_920_5_paired.r256",
+    "bytes": 12056484,
+    "sha256": "6dce474ddc00eb7cafdedbf3854b0c58a184fe2306ac3c63db72aac5d5203946"
+  },
+  "qa": {
+    "gate": "BLOCKED_FOR_PRODUCTION",
+    "test_run": "2026-11-18",
+    "r180_tests_passed": 5,
+    "r257_gate_tests_passed": 3,
+    "r228_test_failed_to_import": "numpy missing in system interpreter"
+  },
+  "files": [
+    {
+      "name": "retina_r180.py",
+      "bytes": 13477,
+      "sha256": "67203cb15cdb94d3fa3976d789f3d7e2b0685ef8cf36c79527664294ac6d1e7a",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "retinal_mosaic_r220.py",
+      "bytes": 2162,
+      "sha256": "aaa95333cd36ce42b02d6a70061f6b9af1c36f347d2432f2840969f6750cbbac",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "staggered_retina_r228.py",
+      "bytes": 11391,
+      "sha256": "3c93027f8fae6e828fa08b90e6fa5b90ed02acf7425be005563f0f70309a626f",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "sparse_retinal_circuit_r229.py",
+      "bytes": 11913,
+      "sha256": "d6479162cf6da7a5031fe81cb3efbfd53077c5c86bb8863b9b9d23bd2f718175",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "clustered_retinal_circuit_r239.py",
+      "bytes": 15702,
+      "sha256": "9f886a21543472012ec920fcc1ad9a95d8ffae36926b90477a2524389a3c28f9",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "binocular_temporal_trace_r254.py",
+      "bytes": 6659,
+      "sha256": "ac92aea820ee58fd1662d9f17e525638da3babd19331a9bac7556e887cf1551d",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "binocular_checkpoint_r256.py",
+      "bytes": 10122,
+      "sha256": "62a81167f4fd992c4fd1711e40c9e28ef56d9f30e934eee0c0850c22c32b1e53",
+      "evidence": "read/verified"
+    },
+    {
+      "name": "stereo_temporal_gate_r257.py",
+      "bytes": 3649,
+      "sha256": "9c495d9ec98d7f8446272cd244dd6d125ba80e05650b4582f4fbc886ded788a6",
+      "evidence": "read/verified"
+    }
+  ],
+  "history_not_current_tests": "R257 report 168/168 historical; only 8 tests freshly reproduced, R228 import failed",
+  "eyes": 2,
+  "retina_per_eye": [
+    920,
+    920
+  ],
+  "receptor_positions": 1692800,
+  "optic_axons_r255": 493606,
+  "stereo_error": {
+    "d2_best": 0,
+    "d5_best": 0,
+    "actual": [
+      2,
+      5
+    ]
+  },
+  "godot_windows": {
+    "transport": "JediControl VM125 desktop-01",
+    "raycast": "Mikoshi_R86_Head_Vision_Graph/scripts/head_raycast_vision_r86.gd",
+    "spatial_graph": "Mikoshi_R86_Head_Vision_Graph/scripts/spatial_graph_r86.gd",
+    "attention": "Mikoshi_R88_Memory_Guided_Attention/scripts/memory_attention_r88.gd",
+    "rays_per_scan": 247,
+    "ray_length_m": 2.8,
+    "physics_mask": 7,
+    "attention_motor_direction_verified": false,
+    "vision_kind": "world-physics range sensor, not retinal photons"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.ide.research",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.ide.research",
+  "parent": "mikoshi.ide",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "ide.research.graph",
+      "version": "1.0.0",
+      "prefix": "research."
+    }
+  ],
+  "requires": []
+}

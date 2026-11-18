@@ -1,0 +1,101 @@
+[
+  {
+    "id": "RETINA_R228",
+    "label": "Retina R228 8×8 random permutation",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Внутри 8×8 блоков случайное переставление порядка: за 4 или 5 циклов каждая позиция получает одну свежую выборку; за цикл обновляется 25% либо 20%; значения и возраст сохраняются.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": "Сообщалось в предыдущей беседе; репозиторий не проверен."
+  },
+  {
+    "id": "RETINA_R240",
+    "label": "Retina R240 clustered mosaic",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Кластеризированный выбор 8×8 областей, обновление 20–25%/цикл; 4 цикла 1.60с/1.78×, 5 циклов 1.30с/2.28× в синтетическом CPU тесте.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": "Из отчёта беседы, не повторный бенчмарк."
+  },
+  {
+    "id": "RETINA_R241",
+    "label": "Retina R241 checkpoint",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Checkpoint 4-цикла 3.97MB, запись 0.60с, загрузка 0.89с; 5-циклов 3.40MB, запись 0.38с, загрузка 0.86с; исторически заявлено 142/142 теста.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": "Исторические результаты; исходные тесты не открыты."
+  },
+  {
+    "id": "RETINA_R242",
+    "label": "Retina R242 tile coverage",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Равномерность обновления, заявлено отсутствие пустых областей 4×4 и 5×5 в синтетическом прогоне.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": ""
+  },
+  {
+    "id": "RETINA_R243",
+    "label": "Retina R243 paired eyes",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Согласование обновляемых областей двух глаз: исторический тест 100% при 0px, 79.4% при 2px и 27.6% при 7px.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": "Синхронизация повышала риск ложных совпадений."
+  },
+  {
+    "id": "RETINA_R244",
+    "label": "Retina R244 motion",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Исторический синтетический тест движения: F1 0.61–0.62 при 12px/цикл.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": ""
+  },
+  {
+    "id": "RETINA_R245_R246",
+    "label": "Retina R245/246 state persistence",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "В предыдущем отчёте проверялось сохранение состояния и таймингов при обновлениях и продолжении.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": ""
+  },
+  {
+    "id": "RETINA_R248_R249",
+    "label": "Retina R248/249 false binocular matches",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Ухудшение ложных бинокулярных событий 12.0→42.5/1000; для R249 сообщалось 152/152 теста.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": "Наличие PASS тестов не означает исправленного stereo; зафиксировать регрессию."
+  },
+  {
+    "id": "RETINA_R254_R257",
+    "label": "Retina R254-R257 temporal stereo",
+    "group": "body",
+    "group_name": "Тело и сенсорика",
+    "kind": "experiment",
+    "description": "Временная бинокулярная память/точное продолжение, исторически 168/168 тестов. Depth gate выбирал 0px вместо реальных 2/5px; корректность 5.36%/2.36%.",
+    "status": "historical_report",
+    "first_seen": "2026-10-18",
+    "note": "Стереоглубина не доказана, требуется исправление."
+  }
+]

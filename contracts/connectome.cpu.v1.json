@@ -1,0 +1,14 @@
+{
+  "schema": "mikoshi.connectome.v1",
+  "note": "Contract only. The sample fields below are NOT actual neural data.",
+  "file_name": "<id>.connectome.json",
+  "required": ["schema", "id", "organ", "coordinate_kind", "source", "dt_ms", "neurons", "synapses"],
+  "organs": ["brain", "spinal"],
+  "limits": {"neurons": 2500, "synapses": 20000, "dt_ms": [0.1, 100]},
+  "neuron_required": ["id", "x", "y", "tau_ms", "threshold"],
+  "neuron_optional": ["refractory_ms", "segment", "lane"],
+  "synapse_required": ["source", "target", "weight"],
+  "clock": ["unix-ns", "monotonic-ns"],
+  "semantics": "Discrete leaky integrate-and-fire. Values in a source file are explicit imported neuron parameters, not inferred from a visualization. No physical motor output.",
+  "safety": "Unknown nodes, nonfinite numbers and dangling connections are rejected. R239 is a different engine and is not magically convertible to LIF."
+}

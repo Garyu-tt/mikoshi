@@ -1,0 +1,18 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.visual2d",
+  "kind": "module",
+  "version": "1.0.0",
+  "title": "mikoshi.visual2d",
+  "parent": "mikoshi.vision",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "visual2d.render",
+      "version": "1.0.0",
+      "prefix": "visual2d."
+    }
+  ],
+  "requires": []
+}

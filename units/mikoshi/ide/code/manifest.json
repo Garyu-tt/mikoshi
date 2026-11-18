@@ -1,0 +1,23 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.ide.code",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.ide.code",
+  "parent": "mikoshi.ide",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "ide.code.source",
+      "version": "1.0.0",
+      "prefix": "code."
+    },
+    {
+      "name": "ide.graph.inspect",
+      "version": "1.0.0",
+      "action": "graph.inspect"
+    }
+  ],
+  "requires": []
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "mikoshi.module-graph.v1",
+  "nodes": [
+    {"id":"mikoshi.retina.clock.guard", "type":"module", "title":"R239 coherent state-clock validation", "status":"implemented"},
+    {"id":"mikoshi.motor.r185_z.response", "type":"module", "title":"Read-only observed lateral ankle sensitivity", "status":"implemented-no-actuation"}
+  ],
+  "edges": [
+    {"source":"mikoshi.retina.clock.guard", "target":"mikoshi.retina.r239.specimen", "relation":"validates_before_restore"},
+    {"source":"mikoshi.motor.r185_z.response", "target":"mikoshi.motor.r185_lateral_z", "relation":"derived_only_from_original_measured_points"},
+    {"source":"mikoshi.motor.r185_z.response", "target":"mikoshi.motor.calibration.registry", "relation":"exposes_read_only_action"},
+    {"source":"mikoshi.motor.r185_z.response", "target":"mikoshi.motor.actuator.gate", "relation":"never_enables_motor_output"}
+  ]
+}

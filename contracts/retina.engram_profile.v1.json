@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Engram retina profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "eye_width",
+    "eye_height",
+    "eyes",
+    "receptor_map_hash",
+    "neuron_map_hash",
+    "state_hash",
+    "scheduler",
+    "source_engine"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "eye_width": {
+      "const": 920
+    },
+    "eye_height": {
+      "const": 920
+    },
+    "eyes": {
+      "const": 2
+    },
+    "receptor_map_hash": {
+      "type": "string"
+    },
+    "neuron_map_hash": {
+      "type": "string"
+    },
+    "state_hash": {
+      "type": "string"
+    },
+    "scheduler": {
+      "enum": [
+        "clustered-4",
+        "clustered-5"
+      ]
+    },
+    "source_engine": {
+      "type": "string"
+    },
+    "optical_calibration_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "last_sample_at_hash": {
+      "type": "string"
+    },
+    "stereo_state_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

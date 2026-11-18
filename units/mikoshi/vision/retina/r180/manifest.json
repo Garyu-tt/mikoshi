@@ -1,0 +1,23 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.retina.r180",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.retina.r180",
+  "parent": "mikoshi.retina",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "vision.retina.r180.execute",
+      "version": "1.0.0",
+      "action": "retina.r180.step"
+    },
+    {
+      "name": "vision.retina.status",
+      "version": "1.0.0",
+      "action": "retina.status"
+    }
+  ],
+  "requires": []
+}

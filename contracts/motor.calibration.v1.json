@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Read-only experimental motor calibration evidence",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "title",
+    "provenance",
+    "protocol",
+    "observations",
+    "operational_status"
+  ],
+  "properties": {
+    "schema": {
+      "const": "mikoshi.motor-calibration.v1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "protocol": {
+      "type": "object"
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1
+    },
+    "operational_status": {
+      "const": "read_only_research_evidence_not_actuator"
+    }
+  }
+}

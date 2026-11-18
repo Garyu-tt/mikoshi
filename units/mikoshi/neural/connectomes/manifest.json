@@ -1,0 +1,18 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.neural.connectomes",
+  "kind": "component",
+  "version": "1.0.0",
+  "title": "mikoshi.neural.connectomes",
+  "parent": "mikoshi.neural",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "neural.connectome.runtime",
+      "version": "1.0.0",
+      "prefix": "connectome."
+    }
+  ],
+  "requires": []
+}

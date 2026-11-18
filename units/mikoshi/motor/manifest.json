@@ -1,0 +1,18 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.motor",
+  "kind": "module",
+  "version": "1.0.0",
+  "title": "mikoshi.motor",
+  "parent": "mikoshi.connectome",
+  "isolation": "inprocess",
+  "enabled": true,
+  "provides": [
+    {
+      "name": "motor.calibration.read",
+      "version": "1.0.0",
+      "prefix": "motor.calibration."
+    }
+  ],
+  "requires": []
+}

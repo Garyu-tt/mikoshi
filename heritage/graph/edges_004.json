@@ -1,0 +1,250 @@
+[
+  {
+    "id": "e091",
+    "source": "DANTE_EPISODIC",
+    "target": "NOOSPHERE",
+    "relation": "PROPOSED_STORAGE_IN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e092",
+    "source": "BF_MEMORY",
+    "target": "NOOSPHERE",
+    "relation": "CONTRASTS_WITH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e093",
+    "source": "DANTE",
+    "target": "DANTE_EPISODIC",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e094",
+    "source": "DANTE",
+    "target": "DANTE_CHARACTER",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e095",
+    "source": "BR_MEM",
+    "target": "NOOSPHERE",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e096",
+    "source": "BR_MEM",
+    "target": "GRAPH_SCRIBE",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e097",
+    "source": "BR_MEM",
+    "target": "SPATIAL_GRAPH",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e098",
+    "source": "MUNI",
+    "target": "SPINAL",
+    "relation": "USES_CONTROLLER",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e099",
+    "source": "BODY_R21",
+    "target": "SPINAL",
+    "relation": "PROTOTYPES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e100",
+    "source": "BODY_R21",
+    "target": "GODOT_JOLT",
+    "relation": "NOT_YET_INTEGRATED_WITH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e101",
+    "source": "DANTE",
+    "target": "MUNI",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e102",
+    "source": "DANTE",
+    "target": "ROOM",
+    "relation": "LIVES_IN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e103",
+    "source": "DANTE",
+    "target": "SENSOR_ROUTER",
+    "relation": "NEEDS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e104",
+    "source": "ROOM",
+    "target": "SENSOR_ROUTER",
+    "relation": "BASELINE_INPUT_TO",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e105",
+    "source": "RETINA",
+    "target": "SPATIAL_GRAPH",
+    "relation": "UPDATES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e106",
+    "source": "SENSOR_ROUTER",
+    "target": "RETINA",
+    "relation": "ROUTES_INPUT_FROM",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e107",
+    "source": "MUNI",
+    "target": "SENSOR_ROUTER",
+    "relation": "CONNECTED_TO",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e108",
+    "source": "VR_BRIDGE",
+    "target": "SENSOR_ROUTER",
+    "relation": "ATTACHES_TO",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e109",
+    "source": "VR_BRIDGE",
+    "target": "OPENXR",
+    "relation": "TARGETS_API",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e110",
+    "source": "VR_BRIDGE",
+    "target": "VIVECRAFT",
+    "relation": "PROPOSED_CONTROLS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e111",
+    "source": "VR_BRIDGE",
+    "target": "GTA_VR",
+    "relation": "PROPOSED_CONTROLS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e112",
+    "source": "WORLD_BRIDGE",
+    "target": "VR_BRIDGE",
+    "relation": "MAY_USE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e113",
+    "source": "WORLD_BRIDGE",
+    "target": "ROOM",
+    "relation": "CONNECTS_TO_BASE",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e114",
+    "source": "VR_OWNER",
+    "target": "VIVECRAFT",
+    "relation": "CAN_BE_TESTED_IN",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e115",
+    "source": "VR_OWNER",
+    "target": "DANTE",
+    "relation": "INTERACTS_WITH",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e116",
+    "source": "DANTE",
+    "target": "BRAIN_INTEGRATION",
+    "relation": "REQUIRES",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e117",
+    "source": "BR_BODY",
+    "target": "MUNI",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e118",
+    "source": "BR_BODY",
+    "target": "ROOM",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e119",
+    "source": "BR_WORLD",
+    "target": "VR_BRIDGE",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e120",
+    "source": "BR_WORLD",
+    "target": "WORLD_BRIDGE",
+    "relation": "CONTAINS",
+    "detail": "",
+    "certainty": "supported"
+  },
+  {
+    "id": "e121",
+    "source": "R_SWARM",
+    "target": "FLY_4",
+    "relation": "OBSERVED_IN",
+    "detail": "",
+    "certainty": "supported"
+  }
+]

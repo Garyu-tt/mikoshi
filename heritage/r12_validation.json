@@ -1,0 +1,45 @@
+{
+  "schema": "mikoshi.r12.validation.v1",
+  "release": "R12",
+  "date": "2026-11-18",
+  "unit_tests": 84,
+  "status": "PASS",
+  "historical_original_r239_engram_r11": {
+    "status": "PASS",
+    "phases_pre": 7,
+    "phases_post": 13,
+    "identical_spikes": 1083,
+    "retinal_state_exact": true,
+    "engram_bytes": 25979
+  },
+  "r12_isolated_original_selftest": {
+    "status": "PASS",
+    "phases_pre": 7,
+    "phases_post": 13,
+    "identical_spikes": 1083,
+    "active_eye_untouched": true,
+    "engram_bytes": 25963,
+    "repeated_runs": 2,
+    "exact_final_sha256": "ee8c8494c27d98c04fed4a5029a9a59d62582893bf975cfb4d867c9a5492f117"
+  },
+  "r12_original_hardened_codec": {
+    "status": "PASS",
+    "corruption_cases": [
+      "source_hash",
+      "clock",
+      "static_anatomy_rehashed"
+    ]
+  },
+  "qualifications": {
+    "resolution": [
+      32,
+      32
+    ],
+    "synthetic_photons": true,
+    "new_vm121_deployed": false,
+    "windows_client_deployed": false,
+    "actual_camera_connected": false,
+    "motor_spinal_actuation": false
+  },
+  "source": "verified original legacy source on isolated Linux staging; local tests in container"
+}

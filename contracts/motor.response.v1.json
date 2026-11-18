@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Measured motor response, never actuator commands",
+  "type":"object",
+  "required":["schema","source_id","provenance","samples","segments","motor_command_available","extrapolation_allowed"],
+  "properties":{
+    "schema":{"const":"mikoshi.motor-response-evidence.v1"},
+    "source_id":{"type":"string"},
+    "provenance":{"type":"object"},
+    "samples":{"type":"integer","minimum":3},
+    "segments":{"type":"array","minItems":2},
+    "motor_command_available":{"const":false},
+    "extrapolation_allowed":{"const":false}
+  }
+}

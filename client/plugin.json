@@ -1,0 +1,38 @@
+{
+  "schema": "mechanicus.module.v1",
+  "module_id": "mikoshi.connectome",
+  "title": "Mikoshi Connectome Runtime",
+  "kind": "client-server-ide-module",
+  "client": {
+    "view": "/",
+    "graph": "/api/v1/graph",
+    "mode": "host-embeddable-preview",
+    "visual2d": "canvas/no-webgl"
+  },
+  "server": {
+    "health": "/api/v1/health",
+    "capabilities": "/api/v1/capabilities",
+    "unified_graph": "/api/v1/unified-graph",
+    "api_version": "v1",
+    "visual2d": "capability-actions-only"
+  },
+  "navigation": {
+    "source": "runtime-graph",
+    "user_editable": true,
+    "fixed_tabs": [],
+    "placement_nodes": true,
+    "duplicate_action_placements": true,
+    "views_are_graph_actions": true,
+    "anatomical_3d_required": false
+  },
+  "styling": {
+    "tokens": "system/host-inherited",
+    "no_static_project_colors": true
+  },
+  "security": {
+    "preview": "Bearer",
+    "host_sso": "not_integrated",
+    "public_direct_exposure": "forbidden"
+  },
+  "unsupported_capabilities": "never shown as executable UI"
+}

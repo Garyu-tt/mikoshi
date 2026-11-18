@@ -1,0 +1,46 @@
+{
+  "schema": "mikoshi.motor-calibration.v1",
+  "id": "r185_lateral_z",
+  "title": "R185: боковой голеностопный момент, ось Z",
+  "provenance": {
+    "kind": "user_report",
+    "reported_at": "2026-11-18",
+    "source_revision": "R185 lateral ankle",
+    "independently_replayed": false
+  },
+  "protocol": {
+    "context": "full simulated Dante body",
+    "axis_of_torque": "Z",
+    "torque_unit": "N*m",
+    "velocity_axis": "right_positive",
+    "velocity_unit": "m/s",
+    "evaluation_frame": 90,
+    "frames": 90,
+    "constraints": "both feet remain in floor contact all 90 frames in each trial"
+  },
+  "observations": [
+    {
+      "torque_n_m": 0,
+      "velocity_right_m_s": 0.042,
+      "left_foot_contact_frames": 90,
+      "right_foot_contact_frames": 90
+    },
+    {
+      "torque_n_m": 2,
+      "velocity_right_m_s": -0.086,
+      "left_foot_contact_frames": 90,
+      "right_foot_contact_frames": 90
+    },
+    {
+      "torque_n_m": -2,
+      "velocity_right_m_s": 0.174,
+      "left_foot_contact_frames": 90,
+      "right_foot_contact_frames": 90
+    }
+  ],
+  "interpretation": {
+    "observed_direction": "negative torque increases rightward velocity, positive torque decreases it",
+    "limits": "single calibration protocol only; no autonomic balance or learned controller established"
+  },
+  "operational_status": "read_only_research_evidence_not_actuator"
+}

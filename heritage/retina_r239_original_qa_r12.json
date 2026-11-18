@@ -1,0 +1,34 @@
+{
+  "schema": "mikoshi.retina.original-qa.v1",
+  "date": "2026-11-18",
+  "source_host": "legacy mirbi-linux",
+  "deployment_target": "new VM121 (not deployed)",
+  "verification": "R11 exact stock smoke_r239_original.py + pinned original source",
+  "source_versions": [
+    "R180",
+    "R182",
+    "R188",
+    "R228",
+    "R238",
+    "R239"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "isolated_venv": true
+  },
+  "test_resolution_per_eye": [
+    32,
+    32
+  ],
+  "phases_before_checkpoint": 7,
+  "phases_after_checkpoint": 13,
+  "post_checkpoint_spikes": 1083,
+  "spike_bytes_and_metadata_identical": true,
+  "neural_state_byte_identical": true,
+  "engram_format": "mikoshi-engram.v1/retina-r239-state.v2",
+  "engram_bytes": 25979,
+  "scope": "Synthetic light input; does not validate 920x920 or cameras",
+  "original_roundtrip_verified": true,
+  "evidence_provenance": "YodaBR linux_exec executed on original source tree with local isolated /tmp bundle"
+}
