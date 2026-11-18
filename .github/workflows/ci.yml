@@ -1,0 +1,29 @@
+name: Mikoshi source and recursive-contract checks
+
+on:
+  push:
+    branches: [main, "feature/**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Python ${{ matrix.python }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run isolated API and recursive graph regression tests
+        run: python -m unittest discover -s tests -q
+      - name: Enforce one-prompt-per-source-file contract
+        run: python tools/verify_size.py
+      - name: Compile Python sources
+        run: python -m compileall -q server tests tools
