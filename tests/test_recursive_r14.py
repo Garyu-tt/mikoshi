@@ -64,7 +64,8 @@ class RecursiveR14Tests(unittest.TestCase):
             live=[{'id':'unclaimed.action'}]
             self.assertEqual(len(registry.graph(live)['nodes']),16)
             self.assertIsNone(registry.provider(live, {'name':'test.cap'}))
-            self.assertEqual([c['id'] for c in registry.actions(live)], ['unclaimed.action'])
+            self.assertEqual(registry.actions(live), [])
+            self.assertEqual(registry.graph(live)['unclaimed_actions'], ['unclaimed.action'])
 
 
 

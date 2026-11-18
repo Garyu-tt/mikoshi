@@ -1,4 +1,4 @@
-# Mikoshi Connectome Runtime · R14
+# Mikoshi Connectome Runtime · R15
 
 **A recursive AdamantiumToolKit / Mechanicus IDE module, not a standalone IDE.**
 
@@ -12,7 +12,18 @@ Experimental, CPU-first nervous-system runtime, Engram storage, 2D eye/brain/spi
 - `contracts/`: typed versioned interfaces. `graph/`, `heritage/`: research provenance and code map.
 - `tests/` and `tools/`: regression and size checks.
 
-Any module can be promoted into an independently installed plugin without changing its public capability contract. Optional providers resolve by capability, not by a hardcoded module ID. Only real available actions are published. In-process isolation is implemented; separate-process containment is **not yet implemented**.
+Any module can be promoted into an independently installed plugin without changing its public capability contract. Optional providers resolve by capability, not by a hardcoded module ID. Only real available actions are published. In-process capability gating is implemented; separate-process containment and crash isolation are **not yet implemented**.
+
+## R15: safer recursive assembly
+
+Manifest types, versions and capability ownership are checked before activation.
+Protected management modules cannot be disabled indirectly through their parent.
+Invalid persistent toggles and invalid manifest reloads fail closed, while
+unclaimed API handlers cannot appear as usable buttons. Live action registration,
+not declarations alone, determines availability.
+
+The source limit intentionally excludes Git internals and the complete GPL
+license. See [recursive safety details](docs/recursive-safety-r15.md).
 
 ## Confirmed neural research
 
@@ -23,6 +34,7 @@ Physical eyes, R257 depth, real spinal actuators, Dante brain, VM121 installatio
 ## Local verification and preview
 
 ```bash
+python -m pip install -r requirements.txt
 python -m unittest discover -s tests -q
 python tools/verify_size.py
 MIKOSHI_API_TOKEN='your-locally-generated-token' python -m server.api
