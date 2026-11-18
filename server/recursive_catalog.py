@@ -5,6 +5,7 @@ import threading
 import uuid
 from pathlib import Path
 from server import recursive_load, recursive_resolve as resolver
+from server.recursive_manifest import ident as valid_id
 
 
 class Catalog:
@@ -16,9 +17,30 @@ class Catalog:
         self.toggles = {}
         if self.state_file.is_file():
             obj = json.loads(self.state_file.read_text(encoding='utf-8'))
-            if obj.get('schema') != 'adamantium.switches.v1':
+            if obj.get('schema') != 'adamantium.switches.v1' or not isinstance(obj.get('units'), dict):
                 raise ValueError('Unknown unit toggle state')
+            if any(not valid_id(k) or type(v) is not bool for k,v in obj['units'].items()):
+                raise ValueError('Invalid saved unit toggle')
             self.toggles = obj['units']
+        self._protected_ready(self.units, self.toggles)
+
+    def _protected_under(self, ancestor):
+        for ident, unit in self.units.items():
+            if not unit.get('protected'):
+                continue
+            current = ident
+            while current:
+                if current == ancestor:
+                    return True
+                current = self.units[current].get('parent')
+        return False
+
+    @staticmethod
+    def _protected_ready(units, toggles):
+        ready = resolver.eligible(units, toggles)
+        if any(unit.get('protected') and not ready[key]
+               for key, unit in units.items()):
+            raise ValueError('Configured state would disable a protected unit')
 
     def enabled(self, live=None):
         configured = resolver.eligible(self.units, self.toggles)
@@ -46,8 +68,8 @@ class Catalog:
 
     def actions(self, live):
         enabled = self.enabled(live)
-        return [c for c in live if not (self.claim(c['id']) and
-                not enabled[self.claim(c['id'])])]
+        return [c for c in live if self.claim(c['id']) is not None and
+                enabled[self.claim(c['id'])]]
 
     def provider(self, live, request):
         actions = {c['id'] for c in self.actions(live)}
@@ -57,11 +79,12 @@ class Catalog:
     def switch(self, ident, enabled):
         if ident not in self.units or type(enabled) is not bool:
             raise ValueError('Unknown unit or invalid toggle')
-        if self.units[ident].get('protected'):
-            raise ValueError('Protected unit must remain accessible')
+        if not enabled and self._protected_under(ident):
+            raise ValueError('Cannot disable protected unit or ancestor')
         with self.lock:
             latest = dict(self.toggles)
             latest[ident] = enabled
+            self._protected_ready(self.units, latest)
             self.state_file.parent.mkdir(parents=True, exist_ok=True)
             candidate = self.state_file.with_name('.'+uuid.uuid4().hex+'.new')
             fd = os.open(candidate, os.O_CREAT|os.O_EXCL|os.O_WRONLY, 0o600)
@@ -78,32 +101,11 @@ class Catalog:
     def reload(self):
         with self.lock:
             latest = recursive_load.discover(self.manifests)
+            self._protected_ready(latest, self.toggles)
             self.units = latest
             return {'units':len(latest),'source':'local_verified_manifests',
                     'code_hotloaded':False}
 
     def graph(self, live):
-        enabled = self.enabled(live)
-        actions = {c['id'] for c in live}
-        nodes, edges = [], []
-        for ident,unit in sorted(self.units.items()):
-            own = [p for p in resolver.resolve(self.units,enabled, actions)
-                   if p['unit']==ident]
-            nodes.append({'id':'unit:'+ident,'type':unit['kind'],'title':unit.get('title',ident),
-                          'version':unit['version'],'enabled':self.enabled()[ident],
-                          'ready':enabled[ident],
-                          'isolation':unit.get('isolation','inprocess'),
-                          'registered_providers':len(own),'path':unit['_path']})
-            if unit.get('parent'):
-                edges.append({'source':'unit:'+unit['parent'],'target':'unit:'+ident,
-                              'relation':'contains'})
-            for p in own:
-                edges.append({'source':'unit:'+ident,'target':p['action'],
-                              'relation':'provides_live'})
-            for req in unit.get('requires', []):
-                matched = self.provider(live,req)
-                if matched:
-                    edges.append({'source':'unit:'+ident,'target':'unit:'+matched['unit'],
-                                  'relation':'uses_optional' if req.get('optional') else 'uses_required'})
-        return {'schema':'adamantium.recursive-graph.v1','nodes':nodes,'edges':edges,
-                'unclaimed_actions':sorted(a for a in actions if self.claim(a) is None)}
+        from server.recursive_graph import build
+        return build(self, live)
