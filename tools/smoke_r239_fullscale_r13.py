@@ -6,7 +6,10 @@ Requires the pinned R180/R182/R188/R228/R238/R239 source tree and NumPy.
 import base64
 import hashlib
 import json
-import resource
+try:
+    import resource  # POSIX-only; benchmark must import on Windows too.
+except ImportError:
+    resource = None
 import tempfile
 import time
 from pathlib import Path
@@ -87,6 +90,7 @@ def run(source, width=920, height=920, passes=5, before=7, after=13):
             'source_field_coverage': observed, 'engram_bytes': dest.stat().st_size,
             'engram_sha256': checksum, 'init_seconds': created_s,
             'experiment_seconds': elapsed_s,
-            'rss_max_mib': round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024, 1),
+            'rss_max_mib': round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024, 1)
+            if resource is not None else None,
             'live_runtime_mutated': False, 'real_camera': False}
 
