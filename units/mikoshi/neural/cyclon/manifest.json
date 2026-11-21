@@ -1,0 +1,12 @@
+{
+  "schema": "adamantium.unit.v1",
+  "id": "mikoshi.cyclon",
+  "kind": "module",
+  "version": "0.1.0",
+  "title": "CYCLON Twins experimental recurrent backend",
+  "parent": "mikoshi.neural",
+  "isolation": "inprocess",
+  "enabled": false,
+  "provides": [],
+  "requires": []
+}
